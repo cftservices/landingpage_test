@@ -957,12 +957,29 @@
             document.getElementById('roiPercentage').textContent = Math.round((savings.total / 50000) * 100);
         }
 
-        function updateDatabaseStatus() {
+        async function updateDatabaseStatus() {
             const statusElement = document.getElementById('dbStatus');
-            if (isSupabaseConfigured()) {
-                statusElement.innerHTML = '<span class="text-green-400">✓ Connected</span>';
-            } else {
+
+            if (!isSupabaseConfigured()) {
                 statusElement.innerHTML = '<span class="text-orange-400">⚠ Not Configured</span>';
+                return;
+            }
+
+            try {
+                // Test basic connection
+                const { data, error } = await supabase
+                    .from('hvac_leads')
+                    .select('count', { count: 'exact', head: true });
+
+                if (error) {
+                    console.error('Database connection test failed:', error);
+                    statusElement.innerHTML = `<span class="text-red-400">✗ Error: ${error.message}</span>`;
+                } else {
+                    statusElement.innerHTML = '<span class="text-green-400">✓ Connected</span>';
+                }
+            } catch (error) {
+                console.error('Database status check failed:', error);
+                statusElement.innerHTML = `<span class="text-red-400">✗ Connection Failed</span>`;
             }
         }
 
@@ -1155,6 +1172,25 @@
 
             } catch (error) {
                 console.error('Error submitting lead:', error);
+
+                // Detailed error logging for debugging
+                if (error.message) {
+                    console.error('Error message:', error.message);
+                }
+                if (error.details) {
+                    console.error('Error details:', error.details);
+                }
+                if (error.hint) {
+                    console.error('Error hint:', error.hint);
+                }
+
+                // Show user-friendly error with details in console
+                const errorElement = document.getElementById('errorMessage');
+                const errorText = currentLanguage === 'nl'
+                    ? `Er is een fout opgetreden: ${error.message || 'Onbekende fout'}. Controleer de browser console voor meer details.`
+                    : `An error occurred: ${error.message || 'Unknown error'}. Check browser console for details.`;
+
+                errorElement.querySelector('span').textContent = errorText;
                 showErrorMessage();
             } finally {
                 isSubmitting = false;
