@@ -62,18 +62,18 @@
 <body class="min-h-screen bg-white">
     <!-- Supabase Configuration (Replace with your actual credentials) -->
     <script>
-        // REPLACE WITH YOUR SUPABASE CREDENTIALS
-        const SUPABASE_URL = 'https://your-project.supabase.co';
-        const SUPABASE_ANON_KEY = 'your-anon-key-here';
+        // Supabase Configuration
+        const SUPABASE_URL = 'https://dbadiofmxikdmetszzrx.supabase.co';
+        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRiYWRpb2ZteGlrZG1ldHN6enJ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg1MzEyOTQsImV4cCI6MjA3NDEwNzI5NH0.ZtIREDS3kE6MWnfNnlq_h4Rw-kCsa8IJKzyNE57nprk';
         
         // Initialize Supabase client
         const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
         
         // Check if Supabase is configured
         function isSupabaseConfigured() {
-            return SUPABASE_URL !== 'https://your-project.supabase.co' && 
-                   SUPABASE_ANON_KEY !== 'your-anon-key-here' &&
-                   SUPABASE_URL.includes('supabase.co');
+            return SUPABASE_URL.includes('supabase.co') &&
+                   SUPABASE_ANON_KEY.length > 20 &&
+                   !SUPABASE_URL.includes('your-project');
         }
     </script>
 
