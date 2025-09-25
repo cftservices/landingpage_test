@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:supabase.com)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Read(//c/tools/SupplierEvaluationDashboard/**)"
     ],
     "deny": [],
     "ask": []
