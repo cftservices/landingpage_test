@@ -4,7 +4,9 @@
       "WebFetch(domain:supabase.com)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Read(//c/tools/SupplierEvaluationDashboard/**)"
+      "Read(//c/tools/SupplierEvaluationDashboard/**)",
+      "Bash(git push:*)",
+      "Bash(vercel:*)"
     ],
     "deny": [],
     "ask": []

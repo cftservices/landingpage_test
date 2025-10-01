@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechFlow24 - Transformeer uw bedrijf met 24/7 geautomatiseerde workflows</title>
-    <meta name="description" content="Sluit u aan bij 500+ Nederlandse bedrijven die €75k+ per jaar besparen met onze 24/7 workflow automatisering. 4 maanden terugverdientijd gegarandeerd.">
+    <title>Stop €273.000 Jaarlijks Verlies - TechFlow24 HVAC AI Platform</title>
+    <meta name="description" content="Nederlandse HVAC installateurs verliezen €273.000 per jaar door 8 operationele problemen. Los ze allemaal op met AI. Terugverdientijd: 15 dagen.">
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -16,50 +16,8 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
 
     <style>
-        /* Custom styles for smooth animations */
-        .fade-in {
-            animation: fadeIn 0.5s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-
-        .slide-up {
-            animation: slideUp 0.3s ease-out;
-        }
-
-        @keyframes slideUp {
-            from { transform: translateY(10px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-
-        /* Custom scrollbar */
-        ::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        ::-webkit-scrollbar-track {
-            background: #f1f5f9;
-        }
-
-        ::-webkit-scrollbar-thumb {
-            background: #3b82f6;
-            border-radius: 4px;
-        }
-
-        .spinner {
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-
         .gradient-flow {
-            background: linear-gradient(-45deg, #3b82f6, #1d4ed8, #2563eb, #1e40af);
+            background: linear-gradient(-45deg, #dc2626, #ef4444, #f97316, #fb923c);
             background-size: 400% 400%;
             animation: gradientFlow 15s ease infinite;
         }
@@ -70,174 +28,347 @@
             100% { background-position: 0% 50%; }
         }
 
-        /* Mobile Responsiveness Fixes */
-        @media (max-width: 768px) {
-            /* Prevent horizontal overflow */
-            body {
-                overflow-x: hidden;
-            }
-
-            /* Mobile header fixes */
-            .mobile-header {
-                padding: 0.75rem 1rem;
-            }
-
-            .mobile-nav {
-                display: none;
-            }
-
-            .mobile-logo {
-                font-size: 1.125rem;
-            }
-
-            .mobile-button {
-                padding: 0.5rem 1rem;
-                font-size: 0.875rem;
-            }
-
-            /* Mobile hero section fixes */
-            .mobile-hero-title {
-                font-size: 2rem;
-                line-height: 1.1;
-                margin-bottom: 1rem;
-            }
-
-            .mobile-hero-subtitle {
-                font-size: 1rem;
-                line-height: 1.4;
-                margin-bottom: 1.5rem;
-            }
-
-            .mobile-hero-buttons {
-                flex-direction: column;
-                gap: 0.75rem;
-            }
-
-            .mobile-hero-button {
-                padding: 0.875rem 1.5rem;
-                font-size: 0.95rem;
-                text-align: center;
-                width: 100%;
-            }
-
-            .mobile-hero-features {
-                flex-direction: column;
-                gap: 0.5rem;
-                font-size: 0.875rem;
-            }
-
-            /* Mobile stats grid */
-            .mobile-stats-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 0.75rem;
-            }
-
-            .mobile-stat-value {
-                font-size: 1.5rem;
-            }
-
-            .mobile-stat-label {
-                font-size: 0.75rem;
-            }
-
-            /* Mobile section spacing */
-            .mobile-section-padding {
-                padding: 2rem 1rem;
-            }
-
-            .mobile-section-title {
-                font-size: 1.75rem;
-                line-height: 1.2;
-                margin-bottom: 1rem;
-            }
-
-            .mobile-section-subtitle {
-                font-size: 1rem;
-                line-height: 1.4;
-            }
-
-            /* Mobile contact form */
-            .mobile-contact-grid {
-                grid-template-columns: 1fr;
-                gap: 1.5rem;
-            }
-
-            .mobile-form-grid {
-                grid-template-columns: 1fr;
-                gap: 1rem;
-            }
-
-            /* Mobile footer */
-            .mobile-footer-grid {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-                text-align: center;
-            }
-
-            /* Ensure no text overflow */
-            .mobile-text-wrap {
-                word-wrap: break-word;
-                overflow-wrap: break-word;
-                hyphens: auto;
-            }
+        .fade-in {
+            animation: fadeIn 0.6s ease-in;
         }
 
-        /* Extra small screens */
-        @media (max-width: 480px) {
-            .mobile-hero-title {
-                font-size: 1.75rem;
-            }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
 
-            .mobile-section-title {
-                font-size: 1.5rem;
-            }
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
 
-            .mobile-hero-subtitle {
-                font-size: 0.95rem;
-            }
+        .pain-card {
+            transition: all 0.3s ease;
+        }
+
+        .pain-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        @keyframes countUp {
+            from { opacity: 0; transform: scale(0.5); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .cost-counter {
+            animation: countUp 0.8s ease-out;
+        }
+
+        .lang-switch {
+            display: inline-flex;
+            background: #f3f4f6;
+            border-radius: 0.5rem;
+            padding: 0.25rem;
+        }
+
+        .lang-btn {
+            padding: 0.5rem 1rem;
+            border-radius: 0.375rem;
+            font-weight: 600;
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .lang-btn.active {
+            background: white;
+            color: #dc2626;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
     </style>
 </head>
-<body class="min-h-screen bg-white">
-    <!-- Supabase Configuration (Replace with your actual credentials) -->
+<body class="min-h-screen bg-gray-50">
+    
+    <!-- Supabase Configuration -->
     <script>
-        // Supabase Configuration
         const SUPABASE_URL = 'https://dbadiofmxikdmetszzrx.supabase.co';
         const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRiYWRpb2ZteGlrZG1ldHN6enJ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg1MzEyOTQsImV4cCI6MjA3NDEwNzI5NH0.ZtIREDS3kE6MWnfNnlq_h4Rw-kCsa8IJKzyNE57nprk';
-
-        // Initialize Supabase client
         const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-        // Check if Supabase is configured
+        
         function isSupabaseConfigured() {
-            return SUPABASE_URL.includes('supabase.co') &&
-                   SUPABASE_ANON_KEY.length > 20 &&
-                   !SUPABASE_URL.includes('your-project');
+            return SUPABASE_URL.includes('supabase.co') && SUPABASE_ANON_KEY.length > 20;
+        }
+
+        // Language translations
+        const translations = {
+            nl: {
+                headerCTA: "Stop Het Verlies",
+                heroValidation: "🚨 GEVALIDEERD BIJ 47 HVAC BEDRIJVEN",
+                heroTitle1: "Uw HVAC Bedrijf Verliest",
+                heroTitle2: "Per Jaar",
+                heroSubtitle: "Door 8 operationele problemen die u <strong>vandaag</strong> kunt oplossen met AI.",
+                heroROI: "Terugverdientijd: 15 dagen.",
+                heroBtn1: "Bereken Uw Verlies",
+                heroBtn2: "Stop Het Verlies Nu",
+                heroBadge1: "500+ HVAC Bedrijven",
+                heroBadge2: "€208k Gemiddelde Besparing",
+                heroBadge3: "15 Dagen ROI",
+                painTitle: "De 8 Pijnpunten Die Uw Geld Kosten",
+                painSubtitle: "Herkenbaar? Elk van deze problemen kost u tienduizenden euro's per jaar. <strong class='text-red-600'>Totaal: €273.000</strong>",
+                pain1Title: "P1: Callback Crisis",
+                pain1Problem: "<strong>Het Probleem:</strong> 20% van uw service calls zijn callbacks. €285-340 per callback.",
+                pain1Story: '"Monteur repareert verwarmingsketel op maandag. Donderdag belt klant: \'Ketel doet het niet!\' Monteur moet terug, geen onderdelen, moet nóg een keer komen."',
+                pain1Impact: "140 callbacks/jaar = €95.000 verlies",
+                pain2Title: "P2: Handmatige Planning",
+                pain2Problem: "<strong>Het Probleem:</strong> Excel sheets, whiteboards. 15% capaciteitsverlies door slechte planning.",
+                pain2Story: '"Manager plant 8 monteurs in. 10:00u belt monteur: \'Klant heeft airco probleem, kan ik niet, ik ben verwarmingsmonteur!\' Hele planning moet opnieuw."',
+                pain2Impact: "2 uur/dag verspild = €45.000 verlies",
+                pain3Title: "P3: Paper-Based Werkbonnen",
+                pain3Problem: "<strong>Het Probleem:</strong> Papieren werkbonnen, handmatige invoer. 12 min per werkbon administratie.",
+                pain3Story: '"Monteur verliest werkbon in bestelbus. Administratie belt: \'Wat heb je gedaan bij klant X?\' Monteur: \'Geen idee meer, was gisteren...\'"',
+                pain3Impact: "2 uur/dag papierwerk = €28.000 verlies",
+                pain4Title: "P4: Klant Niet Thuis",
+                pain4Problem: "<strong>Het Probleem:</strong> 15% no-show rate. Papieren herinneringen komen niet aan of worden vergeten.",
+                pain4Story: '"Monteur rijdt 45 minuten naar Almere. Klant niet thuis. Belt: \'Oh sorry, ik ben naar dokter, kan volgende week?\' Monteur: 2 uur verspild."',
+                pain4Impact: "2 no-shows/week = €32.000 verlies",
+                pain5Title: "P5: Handmatig Temperatuur Loggen",
+                pain5Problem: "<strong>Het Probleem:</strong> 8 minuten per meting, 5 metingen/dag. Handmatig noteren en later invoeren.",
+                pain5Story: '"Monteur meet temperaturen, schrijft op papiertje: \'Aanvoer 72°, retour 58°...\' Papier wordt nat, cijfers onleesbaar. Data kwijt."',
+                pain5Impact: "3.3 uur/week verspild = €18.000 verlies",
+                pain6Title: "P6: F-Gas Compliance Nightmare",
+                pain6Problem: "<strong>Het Probleem:</strong> Handmatige F-Gas rapportage. €500 per monteur certificering + boetes tot €3.000.",
+                pain6Story: '"RVO controle. Inspecteur: \'Waar is F-Gas logboek van installatie X?\' Manager zoekt: \'Ehm... monteur is vorige maand weggegaan...\' Boete: €3.000."',
+                pain6Impact: "Boetes + admin = €15.000 verlies",
+                pain7Title: "P7: Geen Performance Inzicht",
+                pain7Problem: "<strong>Het Probleem:</strong> Geen historische data. Gemiste upsell kansen. Klanten vertrekken.",
+                pain7Story: '"Ketel 12 jaar oud, 8 reparaties, loopt op laatste benen. Monteur weet dit niet. Repareert weer: €4.500 gemist. Had nieuwe ketel moeten verkopen."',
+                pain7Impact: "20+ gemiste verkopen = €25.000 gemist",
+                pain8Title: "P8: Customer Communication Gaps",
+                pain8Problem: "<strong>Het Probleem:</strong> Reactieve communicatie. 50 \"waar blijft de monteur\" telefoontjes per week.",
+                pain8Story: '"Monteur loopt 1 uur vertraging door file. Klant wacht, wordt boos, belt kantoor 3 keer. Schrijft slechte Google review. Nieuwe klanten kiezen concurrent."',
+                pain8Impact: "5% klantverloop = €15.000 verlies",
+                totalImpactTitle: "Totale Impact Op Uw Bedrijf",
+                totalImpactSubtitle: "Jaarlijks verlies door operationele inefficiëntie",
+                totalImpactText: "Plus <strong>€125.000 gemiste omzet</strong> door slechte service = <span class='text-3xl font-bold block mt-2'>€398.000 TOTAAL PROBLEEM</span>",
+                totalImpactBtn: "Los Alle 8 Problemen Op Met AI",
+                calcTitle: "Bereken Uw Specifieke Verlies",
+                calcSubtitle: "Hoeveel verliest ÚW bedrijf exact? Reken het uit in 30 seconden.",
+                calcInputTitle: "Uw Bedrijfsgegevens",
+                calcTechnicians: "Aantal Monteurs:",
+                calcCallbacks: "Callbacks Per Week:",
+                calcNoshow: "No-Show Rate:",
+                calcOutputTitle: "Uw Jaarlijks Verlies",
+                calcCallbacksCost: "Callbacks",
+                calcPlanningCost: "Planning Chaos",
+                calcPaperworkCost: "Papierwerk",
+                calcNoshowCost: "No-Shows",
+                calcOtherCost: "Overige",
+                calcTotalLabel: "TOTAAL JAARLIJKS VERLIES",
+                calcDailyLabel: "Per dag:",
+                calcCTABtn: "Stop Dit Verlies Nu",
+                calcROIText: "⏱️ Terugverdientijd: <strong class='text-green-600'>15 dagen</strong>",
+                modalTitle: "Stop Het Verlies Nu",
+                formName: "Naam *",
+                formEmail: "Email *",
+                formCompany: "Bedrijfsnaam *",
+                formPhone: "Telefoon *",
+                formTechnicians: "Aantal Monteurs *",
+                formTechSelect: "Selecteer",
+                formTech1: "1-4 monteurs",
+                formTech2: "5-15 monteurs",
+                formTech3: "15+ monteurs",
+                formPainpoint: "Grootste Pijnpunt *",
+                formPainSelect: "Selecteer",
+                formPain1: "Te veel callbacks",
+                formPain2: "Handmatige planning chaos",
+                formPain3: "Paper-based werkbonnen",
+                formPain4: "Klanten niet thuis",
+                formPain5: "F-Gas compliance",
+                formPain6: "Alles van bovenstaande",
+                formPrivacy: "Ik ga akkoord met het Privacybeleid en begrijp dat mijn gegevens veilig worden verwerkt. *",
+                formSubmit: "Neem Contact Met Mij Op",
+                formSending: "Verzenden...",
+                formSuccess: "✅ Bedankt! We nemen binnen 2 uur contact met u op.",
+                formError: "❌ Er ging iets mis. Probeer opnieuw of bel ons direct: 020-123-4567",
+                formFooter: "🔒 Veilig & AVG-conform | ⚡ Gemiddelde reactietijd: 2 uur",
+                footerPlatform: "Platform",
+                footerCompany: "Bedrijf",
+                footerContact: "Contact",
+                footerAbout: "Over Ons",
+                footerBlog: "Blog",
+                footerPartners: "Partners",
+                footerPricing: "Prijzen",
+                footerCases: "Case Studies",
+                footerDescription: "Stop €273.000 jaarlijks verlies met AI. Terugverdientijd: 15 dagen.",
+                footerCopyright: "© 2025 TechFlow24 HVAC AI Platform. Alle rechten voorbehouden.",
+                footerPrivacy: "Privacybeleid",
+                footerTerms: "Algemene Voorwaarden",
+                footerTagline: "🇳🇱 Met trots Nederlandse HVAC bedrijven bedienend sinds 2024",
+                perYear: "per jaar verlies",
+                missedRevenue: "gemiste omzet"
+            },
+            en: {
+                headerCTA: "Stop The Loss",
+                heroValidation: "🚨 VALIDATED WITH 47 HVAC COMPANIES",
+                heroTitle1: "Your HVAC Business Loses",
+                heroTitle2: "Per Year",
+                heroSubtitle: "Due to 8 operational problems you can solve with AI <strong>today</strong>.",
+                heroROI: "Payback period: 15 days.",
+                heroBtn1: "Calculate Your Loss",
+                heroBtn2: "Stop The Loss Now",
+                heroBadge1: "500+ HVAC Companies",
+                heroBadge2: "€208k Average Savings",
+                heroBadge3: "15 Days ROI",
+                painTitle: "The 8 Pain Points Costing You Money",
+                painSubtitle: "Recognizable? Each of these problems costs you tens of thousands of euros per year. <strong class='text-red-600'>Total: €273,000</strong>",
+                pain1Title: "P1: Callback Crisis",
+                pain1Problem: "<strong>The Problem:</strong> 20% of your service calls are callbacks. €285-340 per callback.",
+                pain1Story: '"Technician repairs heating boiler on Monday. Thursday customer calls: \'Boiler doesn\'t work!\' Technician must return, no parts, must come again."',
+                pain1Impact: "140 callbacks/year = €95,000 loss",
+                pain2Title: "P2: Manual Planning",
+                pain2Problem: "<strong>The Problem:</strong> Excel sheets, whiteboards. 15% capacity loss due to poor planning.",
+                pain2Story: '"Manager schedules 8 technicians. 10:00am technician calls: \'Customer has AC problem, I can\'t, I\'m a heating technician!\' Entire schedule must be redone."',
+                pain2Impact: "2 hours/day wasted = €45,000 loss",
+                pain3Title: "P3: Paper-Based Work Orders",
+                pain3Problem: "<strong>The Problem:</strong> Paper work orders, manual entry. 12 min per work order administration.",
+                pain3Story: '"Technician loses work order in van. Admin calls: \'What did you do at customer X?\' Technician: \'No idea anymore, was yesterday...\'"',
+                pain3Impact: "2 hours/day paperwork = €28,000 loss",
+                pain4Title: "P4: Customer Not Home",
+                pain4Problem: "<strong>The Problem:</strong> 15% no-show rate. Paper reminders don't arrive or are forgotten.",
+                pain4Story: '"Technician drives 45 minutes to Almere. Customer not home. Calls: \'Oh sorry, I\'m at the doctor, next week?\' Technician: 2 hours wasted."',
+                pain4Impact: "2 no-shows/week = €32,000 loss",
+                pain5Title: "P5: Manual Temperature Logging",
+                pain5Problem: "<strong>The Problem:</strong> 8 minutes per measurement, 5 measurements/day. Manual noting and later entry.",
+                pain5Story: '"Technician measures temperatures, writes on paper: \'Supply 72°, return 58°...\' Paper gets wet, numbers unreadable. Data lost."',
+                pain5Impact: "3.3 hours/week wasted = €18,000 loss",
+                pain6Title: "P6: F-Gas Compliance Nightmare",
+                pain6Problem: "<strong>The Problem:</strong> Manual F-Gas reporting. €500 per technician certification + fines up to €3,000.",
+                pain6Story: '"RVO inspection. Inspector: \'Where is F-Gas logbook for installation X?\' Manager searches: \'Uhm... technician left last month...\' Fine: €3,000."',
+                pain6Impact: "Fines + admin = €15,000 loss",
+                pain7Title: "P7: No Performance Insight",
+                pain7Problem: "<strong>The Problem:</strong> No historical data. Missed upsell opportunities. Customers leave.",
+                pain7Story: '"Boiler 12 years old, 8 repairs, running on last legs. Technician doesn\'t know this. Repairs again: €4,500 missed. Should have sold new boiler."',
+                pain7Impact: "20+ missed sales = €25,000 missed",
+                pain8Title: "P8: Customer Communication Gaps",
+                pain8Problem: "<strong>The Problem:</strong> Reactive communication. 50 \"where is the technician\" calls per week.",
+                pain8Story: '"Technician runs 1 hour late due to traffic. Customer waits, gets angry, calls office 3 times. Writes bad Google review. New customers choose competitor."',
+                pain8Impact: "5% customer churn = €15,000 loss",
+                totalImpactTitle: "Total Impact On Your Business",
+                totalImpactSubtitle: "Annual loss due to operational inefficiency",
+                totalImpactText: "Plus <strong>€125,000 missed revenue</strong> from poor service = <span class='text-3xl font-bold block mt-2'>€398,000 TOTAL PROBLEM</span>",
+                totalImpactBtn: "Solve All 8 Problems With AI",
+                calcTitle: "Calculate Your Specific Loss",
+                calcSubtitle: "How much does YOUR business lose exactly? Calculate in 30 seconds.",
+                calcInputTitle: "Your Business Data",
+                calcTechnicians: "Number of Technicians:",
+                calcCallbacks: "Callbacks Per Week:",
+                calcNoshow: "No-Show Rate:",
+                calcOutputTitle: "Your Annual Loss",
+                calcCallbacksCost: "Callbacks",
+                calcPlanningCost: "Planning Chaos",
+                calcPaperworkCost: "Paperwork",
+                calcNoshowCost: "No-Shows",
+                calcOtherCost: "Other",
+                calcTotalLabel: "TOTAL ANNUAL LOSS",
+                calcDailyLabel: "Per day:",
+                calcCTABtn: "Stop This Loss Now",
+                calcROIText: "⏱️ Payback period: <strong class='text-green-600'>15 days</strong>",
+                modalTitle: "Stop The Loss Now",
+                formName: "Name *",
+                formEmail: "Email *",
+                formCompany: "Company Name *",
+                formPhone: "Phone *",
+                formTechnicians: "Number of Technicians *",
+                formTechSelect: "Select",
+                formTech1: "1-4 technicians",
+                formTech2: "5-15 technicians",
+                formTech3: "15+ technicians",
+                formPainpoint: "Biggest Pain Point *",
+                formPainSelect: "Select",
+                formPain1: "Too many callbacks",
+                formPain2: "Manual planning chaos",
+                formPain3: "Paper-based work orders",
+                formPain4: "Customers not home",
+                formPain5: "F-Gas compliance",
+                formPain6: "All of the above",
+                formPrivacy: "I agree with the Privacy Policy and understand that my data is processed securely. *",
+                formSubmit: "Contact Me",
+                formSending: "Sending...",
+                formSuccess: "✅ Thank you! We will contact you within 2 hours.",
+                formError: "❌ Something went wrong. Please try again or call us directly: +31 20-123-4567",
+                formFooter: "🔒 Secure & GDPR compliant | ⚡ Average response time: 2 hours",
+                footerPlatform: "Platform",
+                footerCompany: "Company",
+                footerContact: "Contact",
+                footerAbout: "About Us",
+                footerBlog: "Blog",
+                footerPartners: "Partners",
+                footerPricing: "Pricing",
+                footerCases: "Case Studies",
+                footerDescription: "Stop €273,000 annual loss with AI. Payback period: 15 days.",
+                footerCopyright: "© 2025 TechFlow24 HVAC AI Platform. All rights reserved.",
+                footerPrivacy: "Privacy Policy",
+                footerTerms: "Terms & Conditions",
+                footerTagline: "🇳🇱 Proudly serving Dutch HVAC companies since 2024",
+                perYear: "loss per year",
+                missedRevenue: "missed revenue"
+            }
+        };
+
+        // Language management
+        let currentLang = localStorage.getItem('hvacLang') || 'nl';
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem('hvacLang', lang);
+            document.documentElement.lang = lang;
+            updateContent();
+            updateActiveLanguage();
+        }
+
+        function updateContent() {
+            const t = translations[currentLang];
+            
+            // Update all translatable elements
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                if (t[key]) {
+                    el.innerHTML = t[key];
+                }
+            });
+
+            // Update placeholders
+            document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+                const key = el.getAttribute('data-i18n-placeholder');
+                if (t[key]) {
+                    el.placeholder = t[key];
+                }
+            });
+        }
+
+        function updateActiveLanguage() {
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            document.querySelector(`[data-lang="${currentLang}"]`).classList.add('active');
         }
     </script>
 
     <!-- Sticky Header -->
-    <header id="header" class="fixed w-full top-0 z-50 transition-all duration-300 bg-transparent">
-        <div class="container mx-auto mobile-header px-6 py-4">
+    <header id="header" class="fixed w-full top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 md:px-6 py-3">
             <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-2">
-                    <i data-lucide="workflow" class="h-8 w-8 text-blue-600 md:h-8 md:w-8 h-6 w-6"></i>
-                    <span class="mobile-logo text-xl font-bold text-gray-900">TechFlow24</span>
+                <div class="flex items-center space-x-3">
+                    <svg class="h-10 w-10" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="#1e40af"/>
+                        <path d="M55 25L35 50H50L45 75L65 50H50L55 25Z" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"/>
+                    </svg>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold text-gray-900">TechFlow24</span>
+                        <span class="text-xs text-gray-600">HVAC AI Platform</span>
+                    </div>
                 </div>
-                <nav class="mobile-nav hidden md:flex space-x-8">
-                    <a href="#features" class="text-gray-700 hover:text-blue-600 transition-colors" data-translate="features">Functies</a>
-                    <a href="#roi" class="text-gray-700 hover:text-blue-600 transition-colors" data-translate="roiCalculator">ROI Calculator</a>
-                    <a href="#pricing" class="text-gray-700 hover:text-blue-600 transition-colors" data-translate="pricing">Prijzen</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors" data-translate="contact">Contact</a>
-                </nav>
-                <div class="flex items-center space-x-2 md:space-x-4">
-                    <!-- Language Toggle -->
-                    <button id="languageToggle" class="flex items-center space-x-1 md:space-x-2 px-2 md:px-3 py-1 md:py-2 rounded-lg border border-gray-300 hover:bg-gray-50 transition-colors">
-                        <i data-lucide="globe" class="h-3 w-3 md:h-4 md:w-4"></i>
-                        <span id="currentLang" class="text-xs md:text-sm font-medium">NL</span>
-                    </button>
-                    <button id="headerDemoBtn" class="mobile-button bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors" data-translate="bookDemo">
-                        Boek Demo
+                <div class="flex items-center gap-4">
+                    <div class="lang-switch">
+                        <div class="lang-btn active" data-lang="nl" onclick="setLanguage('nl')">NL</div>
+                        <div class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</div>
+                    </div>
+                    <button id="headerCTABtn" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                        <span data-i18n="headerCTA">Stop Het Verlies</span>
                     </button>
                 </div>
             </div>
@@ -245,1165 +376,758 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="gradient-flow text-white pt-20 pb-16">
+    <section class="gradient-flow text-white pt-24 pb-16">
         <div class="container mx-auto px-4 md:px-6">
-            <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-                <div>
-                    <div class="bg-blue-800/50 text-blue-200 px-3 md:px-4 py-2 rounded-full inline-block mb-4 md:mb-6">
-                        <span class="text-xs md:text-sm font-medium mobile-text-wrap" data-translate="trustedBy">✨ Vertrouwd door 500+ Nederlandse bedrijven</span>
-                    </div>
-                    <h1 class="mobile-hero-title text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight mobile-text-wrap">
-                        <span data-translate="heroTitle">Transformeer uw bedrijf met</span>
-                        <span class="text-orange-400" data-translate="heroTitleHighlight">24/7 geautomatiseerde</span>
-                        <span data-translate="heroTitleEnd">workflows</span>
-                    </h1>
-                    <p class="mobile-hero-subtitle text-lg md:text-xl mb-6 md:mb-8 text-blue-100 leading-relaxed mobile-text-wrap">
-                        <span data-translate="heroSubtitle">Sluit u aan bij 500+ Nederlandse bedrijven die</span>
-                        <strong data-translate="heroSubtitleAmount">€75k+ per jaar besparen</strong>
-                        <span data-translate="heroSubtitleEnd">door handmatige processen te automatiseren.</span>
-                        <strong class="text-orange-300" data-translate="heroPayback"> 4 maanden terugverdientijd gegarandeerd.</strong>
-                    </p>
-                    <div class="mobile-hero-buttons flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8">
-                        <button id="heroAssessmentBtn" class="mobile-hero-button bg-orange-500 hover:bg-orange-600 px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-all transform hover:scale-105 shadow-lg">
-                            <i data-lucide="calendar" class="inline mr-2 h-4 w-4 md:h-5 md:w-5"></i>
-                            <span data-translate="bookAssessment">Boek Gratis Process Assessment</span>
-                        </button>
-                        <button id="heroDemoBtn" class="mobile-hero-button border-2 border-blue-300 hover:bg-blue-800 px-6 md:px-8 py-3 md:py-4 rounded-lg font-semibold text-base md:text-lg transition-colors">
-                            <i data-lucide="play-circle" class="inline mr-2 h-4 w-4 md:h-5 md:w-5"></i>
-                            <span data-translate="watchDemo">Bekijk Demo (3 min)</span>
-                        </button>
-                    </div>
-                    <div class="mobile-hero-features flex flex-col md:flex-row items-start md:items-center space-y-2 md:space-y-0 md:space-x-6 text-blue-200">
-                        <div class="flex items-center">
-                            <i data-lucide="check-circle" class="h-4 w-4 md:h-5 md:w-5 mr-2 text-green-400 flex-shrink-0"></i>
-                            <span class="mobile-text-wrap" data-translate="paybackPeriod">4 maanden terugverdientijd</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i data-lucide="check-circle" class="h-4 w-4 md:h-5 md:w-5 mr-2 text-green-400 flex-shrink-0"></i>
-                            <span class="mobile-text-wrap" data-translate="freeTrial">30 dagen gratis proefperiode</span>
-                        </div>
-                        <div class="flex items-center">
-                            <i data-lucide="check-circle" class="h-4 w-4 md:h-5 md:w-5 mr-2 text-green-400 flex-shrink-0"></i>
-                            <span class="mobile-text-wrap" data-translate="gdprCompliant">AVG-conform</span>
-                        </div>
-                    </div>
+            <div class="max-w-5xl mx-auto text-center">
+                <div class="inline-block bg-white/20 backdrop-blur px-6 py-3 rounded-full mb-6">
+                    <p class="text-sm md:text-base font-semibold" data-i18n="heroValidation">🚨 GEVALIDEERD BIJ 47 HVAC BEDRIJVEN</p>
                 </div>
-                <div class="relative mt-8 lg:mt-0">
-                    <div class="bg-gradient-to-br from-white/10 to-white/5 backdrop-blur rounded-2xl p-6 md:p-8 border border-white/20">
-                        <div class="text-center mb-4 md:mb-6">
-                            <h3 class="text-xl md:text-2xl font-bold mb-2 mobile-text-wrap" data-translate="avgSavings">Gemiddelde Klantbesparingen</h3>
-                            <p class="text-sm md:text-base text-blue-200 mobile-text-wrap" data-translate="perYear">Per jaar, na 4 maanden implementatie</p>
-                        </div>
-                        <div class="mobile-stats-grid grid grid-cols-2 gap-3 md:gap-4">
-                            <div class="text-center">
-                                <div class="mobile-stat-value text-2xl md:text-3xl font-bold text-orange-400">€75k+</div>
-                                <div class="mobile-stat-label text-xs md:text-sm text-blue-200 mobile-text-wrap" data-translate="annualSavings">Jaarlijkse Besparingen</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="mobile-stat-value text-2xl md:text-3xl font-bold text-green-400">80%</div>
-                                <div class="mobile-stat-label text-xs md:text-sm text-blue-200 mobile-text-wrap" data-translate="timeReduction">Tijdsbesparing</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="mobile-stat-value text-2xl md:text-3xl font-bold text-yellow-400">95%</div>
-                                <div class="mobile-stat-label text-xs md:text-sm text-blue-200 mobile-text-wrap" data-translate="errorReduction">Foutvermindering</div>
-                            </div>
-                            <div class="text-center">
-                                <div class="mobile-stat-value text-2xl md:text-3xl font-bold text-purple-400">24/7</div>
-                                <div class="mobile-stat-label text-xs md:text-sm text-blue-200 mobile-text-wrap" data-translate="automation">Automatisering</div>
-                            </div>
-                        </div>
+                
+                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
+                    <span data-i18n="heroTitle1">Uw HVAC Bedrijf Verliest</span>
+                    <span class="block text-yellow-300 cost-counter">€273.000</span>
+                    <span class="block" data-i18n="heroTitle2">Per Jaar</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl mb-8 text-red-100 leading-relaxed max-w-3xl mx-auto">
+                    <span data-i18n="heroSubtitle">Door 8 operationele problemen die u <strong>vandaag</strong> kunt oplossen met AI.</span>
+                    <span class="block mt-2 text-2xl md:text-3xl font-bold text-white" data-i18n="heroROI">Terugverdientijd: 15 dagen.</span>
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <button id="heroCalculateBtn" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-2xl">
+                        <i data-lucide="calculator" class="inline mr-2 h-5 w-5"></i>
+                        <span data-i18n="heroBtn1">Bereken Uw Verlies</span>
+                    </button>
+                    <button id="heroContactBtn" class="bg-white hover:bg-gray-100 text-red-600 px-8 py-4 rounded-lg font-bold text-lg transition-all border-2 border-white">
+                        <i data-lucide="phone" class="inline mr-2 h-5 w-5"></i>
+                        <span data-i18n="heroBtn2">Stop Het Verlies Nu</span>
+                    </button>
+                </div>
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-red-100">
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="h-5 w-5 text-green-400"></i>
+                        <span data-i18n="heroBadge1">500+ HVAC Bedrijven</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="h-5 w-5 text-green-400"></i>
+                        <span data-i18n="heroBadge2">€208k Gemiddelde Besparing</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i data-lucide="check-circle" class="h-5 w-5 text-green-400"></i>
+                        <span data-i18n="heroBadge3">15 Dagen ROI</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Problem-Solution Section -->
-    <section class="mobile-section-padding py-12 md:py-16 bg-gray-50">
+    <!-- Pain Points Section -->
+    <section class="py-16 bg-white">
         <div class="container mx-auto px-4 md:px-6">
-            <div class="text-center mb-12 md:mb-16">
-                <h2 class="mobile-section-title text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 md:mb-4 mobile-text-wrap" data-translate="stopLosing">
-                    Stop met Tijd en Geld Verliezen aan Handmatige Processen
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-i18n="painTitle">
+                    De 8 Pijnpunten Die Uw Geld Kosten
                 </h2>
-                <p class="mobile-section-subtitle text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mobile-text-wrap" data-translate="problemDescription">
-                    Nederlandse bedrijven verliezen jaarlijks tienduizenden euro's door inefficiënte handmatige workflows. TechFlow24 automatiseert uw processen voor 24/7 productiviteit.
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-i18n="painSubtitle">
+                    Herkenbaar? Elk van deze problemen kost u tienduizenden euro's per jaar.
+                    <strong class="text-red-600">Totaal: €273.000</strong>
                 </p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-                <div>
-                    <h3 class="text-xl md:text-2xl font-bold text-red-600 mb-4 md:mb-6 mobile-text-wrap" data-translate="costManual">De Kosten van Handmatige Processen</h3>
-                    <div class="space-y-3 md:space-y-4">
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-red-100 p-2 rounded-full mt-1 flex-shrink-0">
-                                <i data-lucide="clock" class="h-4 w-4 md:h-5 md:w-5 text-red-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 text-sm md:text-base mobile-text-wrap" data-translate="timeWaste">Tijdverspilling: 25+ uren per week</h4>
-                                <p class="text-gray-600 text-sm md:text-base mobile-text-wrap" data-translate="timeDesc">Handmatige taken kosten €45k+ jaarlijks aan verloren productiviteit</p>
-                            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+                
+                <!-- Pain Point 1 -->
+                <div class="pain-card bg-red-50 border-2 border-red-200 rounded-xl p-6 hover:border-red-400">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-red-600 text-white rounded-lg p-3">
+                            <i data-lucide="alert-triangle" class="h-8 w-8"></i>
                         </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-red-100 p-2 rounded-full mt-1 flex-shrink-0">
-                                <i data-lucide="alert-triangle" class="h-4 w-4 md:h-5 md:w-5 text-red-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 text-sm md:text-base mobile-text-wrap" data-translate="humanErrors">Menselijke Fouten: 15% van taken</h4>
-                                <p class="text-gray-600 text-sm md:text-base mobile-text-wrap" data-translate="errorDesc">Fouten in handmatige processen leiden tot dure correcties en klachten</p>
-                            </div>
+                        <div class="text-right">
+                            <div class="text-3xl font-black text-red-600">€95k</div>
+                            <div class="text-sm text-gray-600" data-i18n="perYear">per jaar verlies</div>
                         </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-red-100 p-2 rounded-full mt-1 flex-shrink-0">
-                                <i data-lucide="moon" class="h-4 w-4 md:h-5 md:w-5 text-red-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 text-sm md:text-base mobile-text-wrap" data-translate="limitedHours">Beperkte Werkuren</h4>
-                                <p class="text-gray-600 text-sm md:text-base mobile-text-wrap" data-translate="hoursDesc">Bedrijven kunnen alleen produceren tijdens kantooruren</p>
-                            </div>
-                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="pain1Title">P1: Callback Crisis</h3>
+                    <p class="text-gray-700 mb-4" data-i18n="pain1Problem">
+                        <strong>Het Probleem:</strong> 20% van uw service calls zijn callbacks. €285-340 per callback.
+                    </p>
+                    <div class="bg-white rounded-lg p-4 mb-4">
+                        <p class="text-sm text-gray-800 italic" data-i18n="pain1Story">
+                            "Monteur repareert verwarmingsketel op maandag. Donderdag belt klant: 'Ketel doet het niet!' 
+                            Monteur moet terug, geen onderdelen, moet nóg een keer komen."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-red-700 font-semibold">
+                        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        <span data-i18n="pain1Impact">140 callbacks/jaar = €95.000 verlies</span>
                     </div>
                 </div>
 
-                <div class="mt-8 lg:mt-0">
-                    <h3 class="text-xl md:text-2xl font-bold text-green-600 mb-4 md:mb-6 mobile-text-wrap" data-translate="flowTransformation">24/7 Workflow Transformatie</h3>
-                    <div class="space-y-3 md:space-y-4">
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-green-100 p-2 rounded-full mt-1 flex-shrink-0">
-                                <i data-lucide="zap" class="h-4 w-4 md:h-5 md:w-5 text-green-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 text-sm md:text-base mobile-text-wrap" data-translate="smartAutomation">Slimme Automatisering: 80% Tijdsbesparing</h4>
-                                <p class="text-gray-600 text-sm md:text-base mobile-text-wrap" data-translate="automationDesc">AI automatiseert repetitieve taken en werkt 24/7 door</p>
-                            </div>
+                <!-- Pain Point 2 -->
+                <div class="pain-card bg-orange-50 border-2 border-orange-200 rounded-xl p-6 hover:border-orange-400">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-orange-600 text-white rounded-lg p-3">
+                            <i data-lucide="calendar-x" class="h-8 w-8"></i>
                         </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-green-100 p-2 rounded-full mt-1 flex-shrink-0">
-                                <i data-lucide="target" class="h-4 w-4 md:h-5 md:w-5 text-green-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 text-sm md:text-base mobile-text-wrap" data-translate="errorElimination">Fouten Eliminatie: 95% Nauwkeurigheid</h4>
-                                <p class="text-gray-600 text-sm md:text-base mobile-text-wrap" data-translate="eliminationDesc">Geautomatiseerde workflows elimineren menselijke fouten</p>
-                            </div>
-                        </div>
-                        <div class="flex items-start space-x-3">
-                            <div class="bg-green-100 p-2 rounded-full mt-1 flex-shrink-0">
-                                <i data-lucide="sun" class="h-4 w-4 md:h-5 md:w-5 text-green-600"></i>
-                            </div>
-                            <div>
-                                <h4 class="font-semibold text-gray-900 text-sm md:text-base mobile-text-wrap" data-translate="alwaysOn">Altijd Aan</h4>
-                                <p class="text-gray-600 text-sm md:text-base mobile-text-wrap" data-translate="alwaysDesc">Uw workflows draaien 24/7, zelfs als u slaapt</p>
-                            </div>
+                        <div class="text-right">
+                            <div class="text-3xl font-black text-orange-600">€45k</div>
+                            <div class="text-sm text-gray-600" data-i18n="perYear">per jaar verlies</div>
                         </div>
                     </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="pain2Title">P2: Handmatige Planning</h3>
+                    <p class="text-gray-700 mb-4" data-i18n="pain2Problem">
+                        <strong>Het Probleem:</strong> Excel sheets, whiteboards. 15% capaciteitsverlies door slechte planning.
+                    </p>
+                    <div class="bg-white rounded-lg p-4 mb-4">
+                        <p class="text-sm text-gray-800 italic" data-i18n="pain2Story">
+                            "Manager plant 8 monteurs in. 10:00u belt monteur: 'Klant heeft airco probleem, kan ik niet, 
+                            ik ben verwarmingsmonteur!' Hele planning moet opnieuw."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-orange-700 font-semibold">
+                        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        <span data-i18n="pain2Impact">2 uur/dag verspild = €45.000 verlies</span>
+                    </div>
+                </div>
+
+                <!-- Pain Point 3 -->
+                <div class="pain-card bg-yellow-50 border-2 border-yellow-200 rounded-xl p-6 hover:border-yellow-400">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-yellow-600 text-white rounded-lg p-3">
+                            <i data-lucide="file-text" class="h-8 w-8"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-3xl font-black text-yellow-600">€28k</div>
+                            <div class="text-sm text-gray-600" data-i18n="perYear">per jaar verlies</div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="pain3Title">P3: Paper-Based Werkbonnen</h3>
+                    <p class="text-gray-700 mb-4" data-i18n="pain3Problem">
+                        <strong>Het Probleem:</strong> Papieren werkbonnen, handmatige invoer. 12 min per werkbon administratie.
+                    </p>
+                    <div class="bg-white rounded-lg p-4 mb-4">
+                        <p class="text-sm text-gray-800 italic" data-i18n="pain3Story">
+                            "Monteur verliest werkbon in bestelbus. Administratie belt: 'Wat heb je gedaan bij klant X?' 
+                            Monteur: 'Geen idee meer, was gisteren...'"
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-yellow-700 font-semibold">
+                        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        <span data-i18n="pain3Impact">2 uur/dag papierwerk = €28.000 verlies</span>
+                    </div>
+                </div>
+
+                <!-- Pain Point 4 -->
+                <div class="pain-card bg-blue-50 border-2 border-blue-200 rounded-xl p-6 hover:border-blue-400">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-blue-600 text-white rounded-lg p-3">
+                            <i data-lucide="user-x" class="h-8 w-8"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-3xl font-black text-blue-600">€32k</div>
+                            <div class="text-sm text-gray-600" data-i18n="perYear">per jaar verlies</div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="pain4Title">P4: Klant Niet Thuis</h3>
+                    <p class="text-gray-700 mb-4" data-i18n="pain4Problem">
+                        <strong>Het Probleem:</strong> 15% no-show rate. Papieren herinneringen komen niet aan of worden vergeten.
+                    </p>
+                    <div class="bg-white rounded-lg p-4 mb-4">
+                        <p class="text-sm text-gray-800 italic" data-i18n="pain4Story">
+                            "Monteur rijdt 45 minuten naar Almere. Klant niet thuis. Belt: 'Oh sorry, ik ben naar dokter, 
+                            kan volgende week?' Monteur: 2 uur verspild."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-blue-700 font-semibold">
+                        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        <span data-i18n="pain4Impact">2 no-shows/week = €32.000 verlies</span>
+                    </div>
+                </div>
+
+                <!-- Pain Point 5 -->
+                <div class="pain-card bg-purple-50 border-2 border-purple-200 rounded-xl p-6 hover:border-purple-400">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-purple-600 text-white rounded-lg p-3">
+                            <i data-lucide="thermometer" class="h-8 w-8"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-3xl font-black text-purple-600">€18k</div>
+                            <div class="text-sm text-gray-600" data-i18n="perYear">per jaar verlies</div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="pain5Title">P5: Handmatig Temperatuur Loggen</h3>
+                    <p class="text-gray-700 mb-4" data-i18n="pain5Problem">
+                        <strong>Het Probleem:</strong> 8 minuten per meting, 5 metingen/dag. Handmatig noteren en later invoeren.
+                    </p>
+                    <div class="bg-white rounded-lg p-4 mb-4">
+                        <p class="text-sm text-gray-800 italic" data-i18n="pain5Story">
+                            "Monteur meet temperaturen, schrijft op papiertje: 'Aanvoer 72°, retour 58°...' 
+                            Papier wordt nat, cijfers onleesbaar. Data kwijt."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-purple-700 font-semibold">
+                        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        <span data-i18n="pain5Impact">3.3 uur/week verspild = €18.000 verlies</span>
+                    </div>
+                </div>
+
+                <!-- Pain Point 6 -->
+                <div class="pain-card bg-green-50 border-2 border-green-200 rounded-xl p-6 hover:border-green-400">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-green-600 text-white rounded-lg p-3">
+                            <i data-lucide="shield-alert" class="h-8 w-8"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-3xl font-black text-green-600">€15k</div>
+                            <div class="text-sm text-gray-600" data-i18n="perYear">per jaar verlies</div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="pain6Title">P6: F-Gas Compliance Nightmare</h3>
+                    <p class="text-gray-700 mb-4" data-i18n="pain6Problem">
+                        <strong>Het Probleem:</strong> Handmatige F-Gas rapportage. €500 per monteur certificering + boetes tot €3.000.
+                    </p>
+                    <div class="bg-white rounded-lg p-4 mb-4">
+                        <p class="text-sm text-gray-800 italic" data-i18n="pain6Story">
+                            "RVO controle. Inspecteur: 'Waar is F-Gas logboek van installatie X?' Manager 
+                            zoekt: 'Ehm... monteur is vorige maand weggegaan...' Boete: €3.000."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-green-700 font-semibold">
+                        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        <span data-i18n="pain6Impact">Boetes + admin = €15.000 verlies</span>
+                    </div>
+                </div>
+
+                <!-- Pain Point 7 -->
+                <div class="pain-card bg-indigo-50 border-2 border-indigo-200 rounded-xl p-6 hover:border-indigo-400">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-indigo-600 text-white rounded-lg p-3">
+                            <i data-lucide="activity" class="h-8 w-8"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-3xl font-black text-indigo-600">€25k</div>
+                            <div class="text-sm text-gray-600" data-i18n="missedRevenue">gemiste omzet</div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="pain7Title">P7: Geen Performance Inzicht</h3>
+                    <p class="text-gray-700 mb-4" data-i18n="pain7Problem">
+                        <strong>Het Probleem:</strong> Geen historische data. Gemiste upsell kansen. Klanten vertrekken.
+                    </p>
+                    <div class="bg-white rounded-lg p-4 mb-4">
+                        <p class="text-sm text-gray-800 italic" data-i18n="pain7Story">
+                            "Ketel 12 jaar oud, 8 reparaties, loopt op laatste benen. Monteur weet dit niet. 
+                            Repareert weer: €4.500 gemist. Had nieuwe ketel moeten verkopen."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-indigo-700 font-semibold">
+                        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        <span data-i18n="pain7Impact">20+ gemiste verkopen = €25.000 gemist</span>
+                    </div>
+                </div>
+
+                <!-- Pain Point 8 -->
+                <div class="pain-card bg-pink-50 border-2 border-pink-200 rounded-xl p-6 hover:border-pink-400">
+                    <div class="flex items-start justify-between mb-4">
+                        <div class="bg-pink-600 text-white rounded-lg p-3">
+                            <i data-lucide="message-square-x" class="h-8 w-8"></i>
+                        </div>
+                        <div class="text-right">
+                            <div class="text-3xl font-black text-pink-600">€15k</div>
+                            <div class="text-sm text-gray-600" data-i18n="perYear">per jaar verlies</div>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="pain8Title">P8: Customer Communication Gaps</h3>
+                    <p class="text-gray-700 mb-4" data-i18n="pain8Problem">
+                        <strong>Het Probleem:</strong> Reactieve communicatie. 50 "waar blijft de monteur" telefoontjes per week.
+                    </p>
+                    <div class="bg-white rounded-lg p-4 mb-4">
+                        <p class="text-sm text-gray-800 italic" data-i18n="pain8Story">
+                            "Monteur loopt 1 uur vertraging door file. Klant wacht, wordt boos, belt kantoor 
+                            3 keer. Schrijft slechte Google review. Nieuwe klanten kiezen concurrent."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-2 text-pink-700 font-semibold">
+                        <i data-lucide="arrow-right" class="h-4 w-4"></i>
+                        <span data-i18n="pain8Impact">5% klantverloop = €15.000 verlies</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Total Impact Box -->
+            <div class="mt-12 max-w-4xl mx-auto">
+                <div class="bg-gradient-to-r from-red-600 to-orange-600 rounded-2xl p-8 text-white text-center shadow-2xl">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4" data-i18n="totalImpactTitle">Totale Impact Op Uw Bedrijf</h3>
+                    <div class="text-6xl md:text-7xl font-black mb-4">€273.000</div>
+                    <p class="text-xl md:text-2xl mb-6" data-i18n="totalImpactSubtitle">Jaarlijks verlies door operationele inefficiëntie</p>
+                    <p class="text-lg mb-6" data-i18n="totalImpactText">
+                        Plus <strong>€125.000 gemiste omzet</strong> door slechte service = 
+                        <span class="text-3xl font-bold block mt-2">€398.000 TOTAAL PROBLEEM</span>
+                    </p>
+                    <button id="painPointsCTABtn" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105">
+                        <span data-i18n="totalImpactBtn">Los Alle 8 Problemen Op Met AI</span>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ROI Calculator Section -->
-    <section id="roi" class="py-16 bg-white">
-        <div class="container mx-auto px-6">
+    <section id="calculator" class="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="container mx-auto px-4 md:px-6">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4" data-translate="calculateSavings">
-                    Bereken Uw Potentiële Besparingen
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-i18n="calcTitle">
+                    Bereken Uw Specifieke Verlies
                 </h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto" data-translate="calculateDesc">
-                    Zie precies hoeveel uw bedrijf kan besparen met TechFlow24 workflow automatisering
+                <p class="text-xl text-gray-600" data-i18n="calcSubtitle">
+                    Hoeveel verliest ÚW bedrijf exact? Reken het uit in 30 seconden.
                 </p>
             </div>
 
-            <div class="max-w-4xl mx-auto">
-                <div class="bg-gradient-to-br from-blue-50 to-orange-50 rounded-2xl shadow-xl p-8">
-                    <div class="grid md:grid-cols-2 gap-8">
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-6" data-translate="companyDetails">Uw Bedrijfsgegevens</h3>
-                            <div class="space-y-6">
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-2">
-                                        <span data-translate="numEmployees">Aantal Medewerkers:</span> <span id="companySizeValue">25</span>
-                                    </label>
-                                    <input
-                                        type="range"
-                                        id="companySize"
-                                        min="5"
-                                        max="500"
-                                        value="25"
-                                        class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
-                                    />
-                                    <div class="flex justify-between text-sm text-gray-500 mt-1">
-                                        <span>5</span>
-                                        <span>500</span>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label class="block text-sm font-medium text-gray-700 mb-2">
-                                        <span data-translate="annualRevenue">Jaarlijkse Omzet:</span> €<span id="annualRevenueValue">2.0</span>M
-                                    </label>
-                                    <input
-                                        type="range"
-                                        id="annualRevenue"
-                                        min="500000"
-                                        max="50000000"
-                                        step="100000"
-                                        value="2000000"
-                                        class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer"
-                                    />
-                                    <div class="flex justify-between text-sm text-gray-500 mt-1">
-                                        <span>€0.5M</span>
-                                        <span>€50M</span>
-                                    </div>
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6" data-i18n="calcInputTitle">Uw Bedrijfsgegevens</h3>
+                        
+                        <div class="space-y-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    <span data-i18n="calcTechnicians">Aantal Monteurs:</span> <span id="technicianCount" class="text-blue-600 font-bold">18</span>
+                                </label>
+                                <input type="range" id="technicians" min="1" max="50" value="18" 
+                                    class="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                                <div class="flex justify-between text-sm text-gray-500 mt-1">
+                                    <span>1</span>
+                                    <span>50</span>
                                 </div>
                             </div>
-                        </div>
 
-                        <div>
-                            <h3 class="text-xl font-bold text-gray-900 mb-6" data-translate="savingsPotential">Uw Jaarlijkse Besparingspotentieel</h3>
-                            <div class="space-y-4">
-                                <div class="flex justify-between items-center p-3 bg-white rounded-lg">
-                                    <span class="text-gray-700" data-translate="timeAutomation">Tijd Automatisering (80%)</span>
-                                    <span class="font-bold text-green-600">€<span id="timeSavings">45</span>k</span>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    <span data-i18n="calcCallbacks">Callbacks Per Week:</span> <span id="callbackCount" class="text-red-600 font-bold">7</span>
+                                </label>
+                                <input type="range" id="callbacks" min="0" max="20" value="7" 
+                                    class="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                                <div class="flex justify-between text-sm text-gray-500 mt-1">
+                                    <span>0</span>
+                                    <span>20/week</span>
                                 </div>
-                                <div class="flex justify-between items-center p-3 bg-white rounded-lg">
-                                    <span class="text-gray-700" data-translate="errorReductionCalc">Fout Vermindering</span>
-                                    <span class="font-bold text-green-600">€<span id="errorSavings">18</span>k</span>
-                                </div>
-                                <div class="flex justify-between items-center p-3 bg-white rounded-lg">
-                                    <span class="text-gray-700" data-translate="processOptimization">Proces Optimalisatie</span>
-                                    <span class="font-bold text-green-600">€<span id="processSavings">12</span>k</span>
-                                </div>
-                                <div class="flex justify-between items-center p-3 bg-white rounded-lg">
-                                    <span class="text-gray-700" data-translate="scalingBenefits">Schaal Voordelen</span>
-                                    <span class="font-bold text-green-600">€<span id="scalingSavings">8</span>k</span>
-                                </div>
-                                <div class="border-t pt-4">
-                                    <div class="flex justify-between items-center p-4 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg">
-                                        <span class="text-lg font-bold" data-translate="totalAnnualSavings">Totale Jaarlijkse Besparingen</span>
-                                        <span class="text-2xl font-bold">€<span id="totalSavings">83</span>k</span>
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <p class="text-sm text-gray-600">
-                                        <strong data-translate="paybackPeriodCalc">Terugverdientijd:</strong> <span data-translate="months">4 maanden</span> |
-                                        <strong data-translate="roi">ROI:</strong> <span id="roiPercentage">415</span>%
-                                    </p>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">
+                                    <span data-i18n="calcNoshow">No-Show Rate:</span> <span id="noshowRate" class="text-blue-600 font-bold">15</span>%
+                                </label>
+                                <input type="range" id="noshow" min="0" max="30" value="15" 
+                                    class="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                                <div class="flex justify-between text-sm text-gray-500 mt-1">
+                                    <span>0%</span>
+                                    <span>30%</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="text-center mt-8">
-                        <button id="roiAnalysisBtn" class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105">
-                            <i data-lucide="calculator" class="inline mr-2 h-5 w-5"></i>
-                            <span data-translate="getDetailedAnalysis">Ontvang Gedetailleerde ROI Analyse</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="mobile-section-padding py-12 md:py-16 bg-blue-900 text-white">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="mobile-contact-grid grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
-                <div>
-                    <h2 class="mobile-section-title text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 mobile-text-wrap" data-translate="readyToTransform">
-                        Klaar om Uw Bedrijf te Transformeren?
-                    </h2>
-                    <p class="mobile-section-subtitle text-lg md:text-xl text-blue-100 mb-6 md:mb-8 mobile-text-wrap" data-translate="contactDesc">
-                        Boek vandaag uw gratis process assessment en ontdek hoe TechFlow24 uw bedrijf €75k+ per jaar kan besparen met gegarandeerde 4-maanden terugverdientijd.
-                    </p>
-
-                    <div class="space-y-4 md:space-y-6">
-                        <div class="flex items-center space-x-3 md:space-x-4">
-                            <div class="bg-blue-800 p-2 rounded-full flex-shrink-0">
-                                <i data-lucide="phone" class="h-4 w-4 md:h-5 md:w-5"></i>
+                    <div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6" data-i18n="calcOutputTitle">Uw Jaarlijks Verlies</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-4 bg-red-50 rounded-lg">
+                                <span class="text-gray-700" data-i18n="calcCallbacksCost">Callbacks</span>
+                                <span class="font-bold text-red-600">€<span id="callbackCost">116,480</span></span>
                             </div>
-                            <div>
-                                <p class="font-semibold text-sm md:text-base mobile-text-wrap" data-translate="callDirectly">Bel ons direct</p>
-                                <p class="text-blue-200 text-sm md:text-base">+31 20 123 4567</p>
+                            <div class="flex justify-between items-center p-4 bg-orange-50 rounded-lg">
+                                <span class="text-gray-700" data-i18n="calcPlanningCost">Planning Chaos</span>
+                                <span class="font-bold text-orange-600">€<span id="planningCost">101,250</span></span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-yellow-50 rounded-lg">
+                                <span class="text-gray-700" data-i18n="calcPaperworkCost">Papierwerk</span>
+                                <span class="font-bold text-yellow-600">€<span id="paperworkCost">63,000</span></span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-blue-50 rounded-lg">
+                                <span class="text-gray-700" data-i18n="calcNoshowCost">No-Shows</span>
+                                <span class="font-bold text-blue-600">€<span id="noshowCost">86,400</span></span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-purple-50 rounded-lg">
+                                <span class="text-gray-700" data-i18n="calcOtherCost">Overige</span>
+                                <span class="font-bold text-purple-600">€<span id="otherCost">123,000</span></span>
                             </div>
                         </div>
 
-                        <div class="flex items-center space-x-3 md:space-x-4">
-                            <div class="bg-blue-800 p-2 rounded-full flex-shrink-0">
-                                <i data-lucide="mail" class="h-4 w-4 md:h-5 md:w-5"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-sm md:text-base mobile-text-wrap" data-translate="emailExperts">E-mail onze experts</p>
-                                <p class="text-blue-200 text-sm md:text-base mobile-text-wrap">hello@techflow24.com</p>
+                        <div class="mt-6 p-6 bg-gradient-to-r from-red-600 to-orange-600 rounded-xl text-white">
+                            <div class="text-center">
+                                <div class="text-sm font-semibold mb-2" data-i18n="calcTotalLabel">TOTAAL JAARLIJKS VERLIES</div>
+                                <div class="text-5xl font-black mb-2">€<span id="totalLoss">490,130</span></div>
+                                <div class="text-sm opacity-90"><span data-i18n="calcDailyLabel">Per dag:</span> €<span id="dailyLoss">1,343</span></div>
                             </div>
                         </div>
 
-                        <div class="flex items-center space-x-3 md:space-x-4">
-                            <div class="bg-blue-800 p-2 rounded-full flex-shrink-0">
-                                <i data-lucide="calendar" class="h-4 w-4 md:h-5 md:w-5"></i>
-                            </div>
-                            <div>
-                                <p class="font-semibold text-sm md:text-base mobile-text-wrap" data-translate="scheduleDemo">Plan een demo</p>
-                                <p class="text-blue-200 text-sm md:text-base mobile-text-wrap" data-translate="available">Beschikbaar 9:00 - 18:00 CET</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 md:mt-8 p-3 md:p-4 bg-blue-800 rounded-lg">
-                        <p class="text-xs md:text-sm text-blue-200 mobile-text-wrap">
-                            <i data-lucide="shield" class="inline h-3 w-3 md:h-4 md:w-4 mr-1"></i>
-                            <span data-translate="gdprCompliantData">AVG-conform • Uw gegevens zijn veilig en worden nooit gedeeld</span>
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bg-white rounded-xl p-6 md:p-8 text-gray-900 mt-8 lg:mt-0">
-                    <h3 class="text-xl md:text-2xl font-bold mb-4 md:mb-6 mobile-text-wrap" data-translate="getFreeAssessment">Ontvang Uw Gratis Process Assessment</h3>
-
-                    <div id="contactForm" class="space-y-3 md:space-y-4">
-                        <div class="mobile-form-grid grid md:grid-cols-2 gap-3 md:gap-4">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">
-                                    <span data-translate="fullName">Volledige Naam</span> *
-                                </label>
-                                <input
-                                    type="text"
-                                    id="contactName"
-                                    required
-                                    class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm md:text-base"
-                                    placeholder="Jan van der Berg"
-                                />
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">
-                                    <span data-translate="businessEmail">Zakelijke E-mail</span> *
-                                </label>
-                                <input
-                                    type="email"
-                                    id="contactEmail"
-                                    required
-                                    class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm md:text-base"
-                                    placeholder="jan@company.nl"
-                                />
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">
-                                <span data-translate="companyName">Bedrijfsnaam</span> *
-                            </label>
-                            <input
-                                type="text"
-                                id="contactCompany"
-                                required
-                                class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm md:text-base"
-                                placeholder="Amsterdam Business Solutions"
-                            />
-                        </div>
-
-                        <div class="mobile-form-grid grid md:grid-cols-2 gap-3 md:gap-4">
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">
-                                    <span data-translate="numberOfEmployees">Aantal Medewerkers</span> *
-                                </label>
-                                <select
-                                    id="contactEmployees"
-                                    required
-                                    class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm md:text-base"
-                                >
-                                    <option value="" data-translate="selectRange">Selecteer bereik</option>
-                                    <option value="1-10" data-translate="emp1to10">1-10 medewerkers</option>
-                                    <option value="11-25" data-translate="emp11to25">11-25 medewerkers</option>
-                                    <option value="26-50" data-translate="emp26to50">26-50 medewerkers</option>
-                                    <option value="51-100" data-translate="emp51to100">51-100 medewerkers</option>
-                                    <option value="100+" data-translate="emp100plus">100+ medewerkers</option>
-                                </select>
-                            </div>
-                            <div>
-                                <label class="block text-sm font-medium text-gray-700 mb-1">
-                                    <span data-translate="annualRevenueForm">Jaarlijkse Omzet</span> *
-                                </label>
-                                <select
-                                    id="contactRevenue"
-                                    required
-                                    class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm md:text-base"
-                                >
-                                    <option value="" data-translate="selectRange">Selecteer bereik</option>
-                                    <option value="<1M" data-translate="revenueUnder1M">Onder €1M</option>
-                                    <option value="1-5M" data-translate="revenue1to5M">€1M - €5M</option>
-                                    <option value="5-10M" data-translate="revenue5to10M">€5M - €10M</option>
-                                    <option value="10-25M" data-translate="revenue10to25M">€10M - €25M</option>
-                                    <option value="25M+" data-translate="revenue25Mplus">€25M+</option>
-                                </select>
-                            </div>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-gray-700 mb-1">
-                                <span data-translate="biggestChallenge">Grootste Operationele Uitdaging</span> *
-                            </label>
-                            <select
-                                id="contactChallenge"
-                                required
-                                class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm md:text-base"
-                            >
-                                <option value="" data-translate="selectChallenge">Selecteer uw grootste uitdaging</option>
-                                <option value="manual-tasks" data-translate="manualTasks">Te veel handmatige taken</option>
-                                <option value="data-management" data-translate="dataManagement">Data management problemen</option>
-                                <option value="process-inefficiency" data-translate="processInefficiency">Inefficiënte processen</option>
-                                <option value="communication" data-translate="communicationGaps">Communicatie hiaten</option>
-                                <option value="scaling" data-translate="scalingIssues">Schaal problemen</option>
-                                <option value="integration" data-translate="systemIntegration">Systeem integratie</option>
-                            </select>
-                        </div>
-
-                        <div class="flex items-start space-x-2 md:space-x-3 mt-3 md:mt-4">
-                            <input
-                                type="checkbox"
-                                id="privacyConsent"
-                                required
-                                class="mt-1 flex-shrink-0"
-                            />
-                            <p class="text-xs md:text-sm text-gray-600 mobile-text-wrap" data-translate="privacyConsent">
-                                Ik ga akkoord met het ontvangen van communicatie over TechFlow24 en begrijp dat mijn gegevens zullen worden verwerkt volgens het Privacybeleid. Ik kan me op elk moment uitschrijven. *
+                        <div class="mt-6 text-center">
+                            <button id="calculatorCTABtn" class="w-full bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105">
+                                <span data-i18n="calcCTABtn">Stop Dit Verlies Nu</span>
+                            </button>
+                            <p class="mt-3 text-sm text-gray-600" data-i18n="calcROIText">
+                                ⏱️ Terugverdientijd: <strong class="text-green-600">15 dagen</strong>
                             </p>
                         </div>
-
-                        <button
-                            id="submitContactForm"
-                            class="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 md:py-4 rounded-lg font-bold text-base md:text-lg transition-all flex items-center justify-center"
-                        >
-                            <span id="submitButtonText" data-translate="bookMyAssessment">Boek Mijn Gratis Process Assessment</span>
-                            <i id="submitButtonIcon" data-lucide="arrow-right" class="ml-2 h-4 w-4 md:h-5 md:w-5"></i>
-                        </button>
-
-                        <!-- Status Messages -->
-                        <div id="successMessage" class="hidden mt-4 p-3 md:p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
-                            <div class="flex items-center">
-                                <i data-lucide="check-circle" class="h-4 w-4 md:h-5 md:w-5 mr-2 flex-shrink-0"></i>
-                                <span class="font-medium text-sm md:text-base mobile-text-wrap" data-translate="successMessage">
-                                    Bedankt! We nemen binnen 24 uur contact met u op voor uw process assessment.
-                                </span>
-                            </div>
-                        </div>
-
-                        <div id="errorMessage" class="hidden mt-4 p-3 md:p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg">
-                            <div class="flex items-center">
-                                <span class="font-medium text-sm md:text-base mobile-text-wrap" data-translate="errorMessage">
-                                    Er is een fout opgetreden. Probeer het opnieuw of neem direct contact op via telefoon.
-                                </span>
-                            </div>
-                        </div>
                     </div>
-
-                    <p class="text-center text-xs md:text-sm text-gray-500 mt-3 md:mt-4 mobile-text-wrap" data-translate="trustedResponse">
-                        Vertrouwd door 500+ Nederlandse bedrijven • Gemiddelde reactietijd: 2 uur
-                    </p>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-3xl font-bold text-gray-900" data-i18n="modalTitle">Stop Het Verlies Nu</h3>
+                <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                    <i data-lucide="x" class="h-8 w-8"></i>
+                </button>
+            </div>
+
+            <form id="contactForm" class="space-y-4">
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formName">Naam *</label>
+                        <input type="text" id="name" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formEmail">Email *</label>
+                        <input type="email" id="email" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formCompany">Bedrijfsnaam *</label>
+                    <input type="text" id="company" required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formPhone">Telefoon *</label>
+                        <input type="tel" id="phone" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formTechnicians">Aantal Monteurs *</label>
+                        <select id="techCount" required
+                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                            <option value="" data-i18n="formTechSelect">Selecteer</option>
+                            <option value="1-4" data-i18n="formTech1">1-4 monteurs</option>
+                            <option value="5-15" data-i18n="formTech2">5-15 monteurs</option>
+                            <option value="15+" data-i18n="formTech3">15+ monteurs</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formPainpoint">Grootste Pijnpunt *</label>
+                    <select id="painpoint" required
+                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                        <option value="" data-i18n="formPainSelect">Selecteer</option>
+                        <option value="callbacks" data-i18n="formPain1">Te veel callbacks</option>
+                        <option value="planning" data-i18n="formPain2">Handmatige planning chaos</option>
+                        <option value="paperwork" data-i18n="formPain3">Paper-based werkbonnen</option>
+                        <option value="noshow" data-i18n="formPain4">Klanten niet thuis</option>
+                        <option value="compliance" data-i18n="formPain5">F-Gas compliance</option>
+                        <option value="all" data-i18n="formPain6">Alles van bovenstaande</option>
+                    </select>
+                </div>
+
+                <div class="flex items-start gap-2">
+                    <input type="checkbox" id="privacy" required class="mt-1">
+                    <label for="privacy" class="text-sm text-gray-600" data-i18n="formPrivacy">
+                        Ik ga akkoord met het Privacybeleid en begrijp dat mijn gegevens veilig worden verwerkt. *
+                    </label>
+                </div>
+
+                <button type="submit" id="submitBtn"
+                    class="w-full bg-red-600 hover:bg-red-700 text-white py-4 rounded-lg font-bold text-lg transition-colors">
+                    <span id="btnText" data-i18n="formSubmit">Neem Contact Met Mij Op</span>
+                    <i data-lucide="send" class="inline ml-2 h-5 w-5"></i>
+                </button>
+
+                <div id="successMessage" class="hidden p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg" data-i18n="formSuccess">
+                    ✅ Bedankt! We nemen binnen 2 uur contact met u op.
+                </div>
+
+                <div id="errorMessage" class="hidden p-4 bg-red-100 border border-red-400 text-red-700 rounded-lg" data-i18n="formError">
+                    ❌ Er ging iets mis. Probeer opnieuw of bel ons direct: 020-123-4567
+                </div>
+            </form>
+
+            <p class="text-center text-sm text-gray-500 mt-4" data-i18n="formFooter">
+                🔒 Veilig & AVG-conform | ⚡ Gemiddelde reactietijd: 2 uur
+            </p>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-4 gap-8">
+        <div class="container mx-auto px-4 md:px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
                 <div>
-                    <div class="flex items-center space-x-2 mb-4">
-                        <i data-lucide="workflow" class="h-8 w-8 text-blue-400"></i>
-                        <span class="text-xl font-bold">TechFlow24</span>
+                    <div class="flex items-center gap-3 mb-4">
+                        <svg class="h-10 w-10" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="#1e40af"/>
+                            <path d="M55 25L35 50H50L45 75L65 50H50L55 25Z" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"/>
+                        </svg>
+                        <div class="flex flex-col">
+                            <span class="text-xl font-bold">TechFlow24</span>
+                            <span class="text-xs text-gray-400">HVAC AI Platform</span>
+                        </div>
                     </div>
-                    <p class="text-gray-400 mb-4" data-translate="footerDesc">
-                        Nederlandse bedrijven transformeren met 24/7 geautomatiseerde workflow oplossingen.
-                    </p>
-                    <p class="text-sm text-gray-500" data-translate="foundedServing">
-                        Opgericht door Process Automation Experts<br>500+ Bedrijven Bedienend in Nederland
+                    <p class="text-gray-400 text-sm" data-i18n="footerDescription">
+                        Stop €273.000 jaarlijks verlies met AI. Terugverdientijd: 15 dagen.
                     </p>
                 </div>
 
                 <div>
-                    <h4 class="font-bold mb-4" data-translate="platform">Platform</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#features" class="hover:text-white transition-colors">Workflow Automation</a></li>
-                        <li><a href="#features" class="hover:text-white transition-colors">Process Intelligence</a></li>
-                        <li><a href="#features" class="hover:text-white transition-colors">Smart Integrations</a></li>
-                        <li><a href="#features" class="hover:text-white transition-colors">Analytics Dashboard</a></li>
+                    <h4 class="font-bold mb-4" data-i18n="footerPlatform">Platform</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white">8 AI Modules</a></li>
+                        <li><a href="#" class="hover:text-white" data-i18n="footerPricing">Prijzen</a></li>
+                        <li><a href="#" class="hover:text-white">ROI Calculator</a></li>
+                        <li><a href="#" class="hover:text-white" data-i18n="footerCases">Case Studies</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="font-bold mb-4" data-translate="company">Bedrijf</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors" data-translate="aboutUs">Over Ons</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors" data-translate="caseStudies">Casestudies</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors" data-translate="blog">Blog</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors" data-translate="careers">Carrières</a></li>
+                    <h4 class="font-bold mb-4" data-i18n="footerCompany">Bedrijf</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li><a href="#" class="hover:text-white" data-i18n="footerAbout">Over Ons</a></li>
+                        <li><a href="#" class="hover:text-white" data-i18n="footerContact">Contact</a></li>
+                        <li><a href="#" class="hover:text-white" data-i18n="footerBlog">Blog</a></li>
+                        <li><a href="#" class="hover:text-white" data-i18n="footerPartners">Partners</a></li>
                     </ul>
                 </div>
 
                 <div>
-                    <h4 class="font-bold mb-4" data-translate="support">Ondersteuning</h4>
-                    <ul class="space-y-2 text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors" data-translate="helpCenter">Helpcentrum</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors" data-translate="apiDocs">API Documentatie</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors" data-translate="privacyPolicy">Privacybeleid</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors" data-translate="termsOfService">Servicevoorwaarden</a></li>
+                    <h4 class="font-bold mb-4" data-i18n="footerContact">Contact</h4>
+                    <ul class="space-y-2 text-gray-400 text-sm">
+                        <li>📞 020-123-4567</li>
+                        <li>📧 info@techflow24.nl</li>
+                        <li>🕐 9:00 - 18:00 CET</li>
+                        <li>🔒 AVG-conform</li>
                     </ul>
                 </div>
             </div>
 
-            <div class="border-t border-gray-800 mt-8 pt-8 text-center">
-                <p class="text-gray-400">
-                    © 2025 TechFlow24. <span data-translate="allRightsReserved">Alle rechten voorbehouden.</span> |
-                    <span class="ml-1" data-translate="proudlyServing">🇳🇱 Met trots Nederlandse bedrijven bedienend sinds 2024</span>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400 text-sm">
+                <p><span data-i18n="footerCopyright">© 2025 TechFlow24 HVAC AI Platform. Alle rechten voorbehouden.</span> | 
+                    <a href="#" class="hover:text-white" data-i18n="footerPrivacy">Privacybeleid</a> | 
+                    <a href="#" class="hover:text-white" data-i18n="footerTerms">Algemene Voorwaarden</a>
                 </p>
-                <!-- Database Connection Status -->
-                <div class="mt-2 text-xs text-gray-500">
-                    Database Status: <span id="dbStatus" class="text-orange-400">⚠ Not Configured</span>
-                </div>
+                <p class="mt-2" data-i18n="footerTagline">🇳🇱 Met trots Nederlandse HVAC bedrijven bedienend sinds 2024</p>
             </div>
         </div>
     </footer>
 
+    <!-- JavaScript -->
     <script>
-        // Translation system
-        const translations = {
-            nl: {
-                features: "Functies",
-                roiCalculator: "ROI Calculator",
-                pricing: "Prijzen",
-                contact: "Contact",
-                bookDemo: "Boek Demo",
-                trustedBy: "✨ Vertrouwd door 500+ Nederlandse bedrijven",
-                heroTitle: "Transformeer uw bedrijf met",
-                heroTitleHighlight: "24/7 geautomatiseerde",
-                heroTitleEnd: "workflows",
-                heroSubtitle: "Sluit u aan bij 500+ Nederlandse bedrijven die",
-                heroSubtitleAmount: "€75k+ per jaar besparen",
-                heroSubtitleEnd: "door handmatige processen te automatiseren.",
-                heroPayback: "4 maanden terugverdientijd gegarandeerd.",
-                bookAssessment: "Boek Gratis Process Assessment",
-                watchDemo: "Bekijk Demo (3 min)",
-                paybackPeriod: "4 maanden terugverdientijd",
-                freeTrial: "30 dagen gratis proefperiode",
-                gdprCompliant: "AVG-conform",
-                avgSavings: "Gemiddelde Klantbesparingen",
-                perYear: "Per jaar, na 4 maanden implementatie",
-                annualSavings: "Jaarlijkse Besparingen",
-                timeReduction: "Tijdsbesparing",
-                errorReduction: "Foutvermindering",
-                automation: "Automatisering",
-                stopLosing: "Stop met Tijd en Geld Verliezen aan Handmatige Processen",
-                problemDescription: "Nederlandse bedrijven verliezen jaarlijks tienduizenden euro's door inefficiënte handmatige workflows. TechFlow24 automatiseert uw processen voor 24/7 productiviteit.",
-                costManual: "De Kosten van Handmatige Processen",
-                timeWaste: "Tijdverspilling: 25+ uren per week",
-                timeDesc: "Handmatige taken kosten €45k+ jaarlijks aan verloren productiviteit",
-                humanErrors: "Menselijke Fouten: 15% van taken",
-                errorDesc: "Fouten in handmatige processen leiden tot dure correcties en klachten",
-                limitedHours: "Beperkte Werkuren",
-                hoursDesc: "Bedrijven kunnen alleen produceren tijdens kantooruren",
-                flowTransformation: "24/7 Workflow Transformatie",
-                smartAutomation: "Slimme Automatisering: 80% Tijdsbesparing",
-                automationDesc: "AI automatiseert repetitieve taken en werkt 24/7 door",
-                errorElimination: "Fouten Eliminatie: 95% Nauwkeurigheid",
-                eliminationDesc: "Geautomatiseerde workflows elimineren menselijke fouten",
-                alwaysOn: "Altijd Aan",
-                alwaysDesc: "Uw workflows draaien 24/7, zelfs als u slaapt",
-                calculateSavings: "Bereken Uw Potentiële Besparingen",
-                calculateDesc: "Zie precies hoeveel uw bedrijf kan besparen met TechFlow24 workflow automatisering",
-                companyDetails: "Uw Bedrijfsgegevens",
-                numEmployees: "Aantal Medewerkers:",
-                annualRevenue: "Jaarlijkse Omzet:",
-                savingsPotential: "Uw Jaarlijkse Besparingspotentieel",
-                timeAutomation: "Tijd Automatisering (80%)",
-                errorReductionCalc: "Fout Vermindering",
-                processOptimization: "Proces Optimalisatie",
-                scalingBenefits: "Schaal Voordelen",
-                totalAnnualSavings: "Totale Jaarlijkse Besparingen",
-                paybackPeriodCalc: "Terugverdientijd:",
-                months: "4 maanden",
-                roi: "ROI:",
-                getDetailedAnalysis: "Ontvang Gedetailleerde ROI Analyse",
-                readyToTransform: "Klaar om Uw Bedrijf te Transformeren?",
-                contactDesc: "Boek vandaag uw gratis process assessment en ontdek hoe TechFlow24 uw bedrijf €75k+ per jaar kan besparen met gegarandeerde 4-maanden terugverdientijd.",
-                callDirectly: "Bel ons direct",
-                emailExperts: "E-mail onze experts",
-                scheduleDemo: "Plan een demo",
-                available: "Beschikbaar 9:00 - 18:00 CET",
-                gdprCompliantData: "AVG-conform • Uw gegevens zijn veilig en worden nooit gedeeld",
-                getFreeAssessment: "Ontvang Uw Gratis Process Assessment",
-                fullName: "Volledige Naam",
-                businessEmail: "Zakelijke E-mail",
-                companyName: "Bedrijfsnaam",
-                numberOfEmployees: "Aantal Medewerkers",
-                selectRange: "Selecteer bereik",
-                annualRevenueForm: "Jaarlijkse Omzet",
-                biggestChallenge: "Grootste Operationele Uitdaging",
-                selectChallenge: "Selecteer uw grootste uitdaging",
-                emp1to10: "1-10 medewerkers",
-                emp11to25: "11-25 medewerkers",
-                emp26to50: "26-50 medewerkers",
-                emp51to100: "51-100 medewerkers",
-                emp100plus: "100+ medewerkers",
-                revenueUnder1M: "Onder €1M",
-                revenue1to5M: "€1M - €5M",
-                revenue5to10M: "€5M - €10M",
-                revenue10to25M: "€10M - €25M",
-                revenue25Mplus: "€25M+",
-                manualTasks: "Te veel handmatige taken",
-                dataManagement: "Data management problemen",
-                processInefficiency: "Inefficiënte processen",
-                communicationGaps: "Communicatie hiaten",
-                scalingIssues: "Schaal problemen",
-                systemIntegration: "Systeem integratie",
-                privacyConsent: "Ik ga akkoord met het ontvangen van communicatie over TechFlow24 en begrijp dat mijn gegevens zullen worden verwerkt volgens het Privacybeleid. Ik kan me op elk moment uitschrijven.",
-                bookMyAssessment: "Boek Mijn Gratis Process Assessment",
-                trustedResponse: "Vertrouwd door 500+ Nederlandse bedrijven • Gemiddelde reactietijd: 2 uur",
-                footerDesc: "Nederlandse bedrijven transformeren met 24/7 geautomatiseerde workflow oplossingen.",
-                foundedServing: "Opgericht door Process Automation Experts\n500+ Bedrijven Bedienend in Nederland",
-                platform: "Platform",
-                company: "Bedrijf",
-                aboutUs: "Over Ons",
-                caseStudies: "Casestudies",
-                blog: "Blog",
-                careers: "Carrières",
-                support: "Ondersteuning",
-                helpCenter: "Helpcentrum",
-                apiDocs: "API Documentatie",
-                privacyPolicy: "Privacybeleid",
-                termsOfService: "Servicevoorwaarden",
-                allRightsReserved: "Alle rechten voorbehouden.",
-                proudlyServing: "🇳🇱 Met trots Nederlandse bedrijven bedienend sinds 2024",
-                successMessage: "Bedankt! We nemen binnen 24 uur contact met u op voor uw process assessment.",
-                errorMessage: "Er is een fout opgetreden. Probeer het opnieuw of neem direct contact op via telefoon."
-            },
-            en: {
-                features: "Features",
-                roiCalculator: "ROI Calculator",
-                pricing: "Pricing",
-                contact: "Contact",
-                bookDemo: "Book Demo",
-                trustedBy: "✨ Trusted by 500+ Dutch Companies",
-                heroTitle: "Transform Your Business with",
-                heroTitleHighlight: "24/7 Automated",
-                heroTitleEnd: "Workflows",
-                heroSubtitle: "Join 500+ Dutch companies saving",
-                heroSubtitleAmount: "€75k+ annually",
-                heroSubtitleEnd: "by automating manual processes.",
-                heroPayback: "4-month payback guaranteed.",
-                bookAssessment: "Book Free Process Assessment",
-                watchDemo: "Watch Demo (3 min)",
-                paybackPeriod: "4-month payback",
-                freeTrial: "30-day free trial",
-                gdprCompliant: "GDPR compliant",
-                avgSavings: "Average Customer Savings",
-                perYear: "Per year, after 4-month implementation",
-                annualSavings: "Annual Savings",
-                timeReduction: "Time Reduction",
-                errorReduction: "Error Reduction",
-                automation: "Automation",
-                stopLosing: "Stop Losing Time and Money on Manual Processes",
-                problemDescription: "Dutch companies lose tens of thousands annually due to inefficient manual workflows. TechFlow24 automates your processes for 24/7 productivity.",
-                costManual: "The Cost of Manual Processes",
-                timeWaste: "Time Waste: 25+ hours per week",
-                timeDesc: "Manual tasks cost €45k+ annually in lost productivity",
-                humanErrors: "Human Errors: 15% of tasks",
-                errorDesc: "Errors in manual processes lead to expensive corrections and complaints",
-                limitedHours: "Limited Working Hours",
-                hoursDesc: "Businesses can only produce during office hours",
-                flowTransformation: "24/7 Workflow Transformation",
-                smartAutomation: "Smart Automation: 80% Time Savings",
-                automationDesc: "AI automates repetitive tasks and works 24/7",
-                errorElimination: "Error Elimination: 95% Accuracy",
-                eliminationDesc: "Automated workflows eliminate human errors",
-                alwaysOn: "Always On",
-                alwaysDesc: "Your workflows run 24/7, even while you sleep",
-                calculateSavings: "Calculate Your Potential Savings",
-                calculateDesc: "See exactly how much your business could save with TechFlow24 workflow automation",
-                companyDetails: "Your Company Details",
-                numEmployees: "Number of Employees:",
-                annualRevenue: "Annual Revenue: €",
-                savingsPotential: "Your Annual Savings Potential",
-                timeAutomation: "Time Automation (80%)",
-                errorReductionCalc: "Error Reduction",
-                processOptimization: "Process Optimization",
-                scalingBenefits: "Scaling Benefits",
-                totalAnnualSavings: "Total Annual Savings",
-                paybackPeriodCalc: "Payback period:",
-                months: "4 months",
-                roi: "ROI:",
-                getDetailedAnalysis: "Get Detailed ROI Analysis",
-                readyToTransform: "Ready to Transform Your Business?",
-                contactDesc: "Book your free process assessment today and discover how TechFlow24 can save your company €75k+ annually with a guaranteed 4-month payback.",
-                callDirectly: "Call us directly",
-                emailExperts: "Email our experts",
-                scheduleDemo: "Schedule a demo",
-                available: "Available 9 AM - 6 PM CET",
-                gdprCompliantData: "GDPR Compliant • Your data is secure and never shared",
-                getFreeAssessment: "Get Your Free Process Assessment",
-                fullName: "Full Name",
-                businessEmail: "Business Email",
-                companyName: "Company Name",
-                numberOfEmployees: "Number of Employees",
-                selectRange: "Select range",
-                annualRevenueForm: "Annual Revenue",
-                biggestChallenge: "Biggest Operational Challenge",
-                selectChallenge: "Select your main challenge",
-                emp1to10: "1-10 employees",
-                emp11to25: "11-25 employees",
-                emp26to50: "26-50 employees",
-                emp51to100: "51-100 employees",
-                emp100plus: "100+ employees",
-                revenueUnder1M: "Under €1M",
-                revenue1to5M: "€1M - €5M",
-                revenue5to10M: "€5M - €10M",
-                revenue10to25M: "€10M - €25M",
-                revenue25Mplus: "€25M+",
-                manualTasks: "Too many manual tasks",
-                dataManagement: "Data management issues",
-                processInefficiency: "Inefficient processes",
-                communicationGaps: "Communication gaps",
-                scalingIssues: "Scaling problems",
-                systemIntegration: "System integration",
-                privacyConsent: "I agree to receive communications about TechFlow24 and understand that my data will be processed according to the Privacy Policy. I can unsubscribe at any time.",
-                bookMyAssessment: "Book My Free Process Assessment",
-                trustedResponse: "Trusted by 500+ Dutch companies • Average response time: 2 hours",
-                footerDesc: "Transforming Dutch businesses with 24/7 automated workflow solutions.",
-                foundedServing: "Founded by Process Automation Experts\nServing 500+ Companies Across Netherlands",
-                platform: "Platform",
-                company: "Company",
-                aboutUs: "About Us",
-                caseStudies: "Case Studies",
-                blog: "Blog",
-                careers: "Careers",
-                support: "Support",
-                helpCenter: "Help Center",
-                apiDocs: "API Documentation",
-                privacyPolicy: "Privacy Policy",
-                termsOfService: "Terms of Service",
-                allRightsReserved: "All rights reserved.",
-                proudlyServing: "🇳🇱 Proudly serving Dutch businesses since 2024",
-                successMessage: "Thank you! We'll contact you within 24 hours for your process assessment.",
-                errorMessage: "An error occurred. Please try again or contact us directly by phone."
-            }
-        };
-
-        // State variables
-        let currentLanguage = 'nl';
-        let companySize = 25;
-        let annualRevenue = 2000000;
-        let isSubmitting = false;
-
-        // Initialize page
+        // Initialize Lucide icons and language
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize Lucide icons
             lucide.createIcons();
+            
+            // Set initial language
+            setLanguage(currentLang);
 
-            // Check database connection
-            updateDatabaseStatus();
+            // Calculator functionality
+            const techniciansSlider = document.getElementById('technicians');
+            const callbacksSlider = document.getElementById('callbacks');
+            const noshowSlider = document.getElementById('noshow');
 
-            // Setup event listeners
-            setupEventListeners();
+            function updateCalculator() {
+                const techs = parseInt(techniciansSlider.value);
+                const callbacks = parseInt(callbacksSlider.value);
+                const noshowRate = parseInt(noshowSlider.value);
 
-            // Calculate initial ROI
-            updateROICalculation();
+                // Update display values
+                document.getElementById('technicianCount').textContent = techs;
+                document.getElementById('callbackCount').textContent = callbacks;
+                document.getElementById('noshowRate').textContent = noshowRate;
 
-            // Setup scroll effects
-            setupScrollEffects();
-        });
+                // Calculate losses
+                const callbackCost = callbacks * 52 * 320;
+                const planningCost = techs * 5625;
+                const paperworkCost = techs * 3500;
+                const noshowCost = (noshowRate / 100) * techs * 32000;
+                const otherCost = 123000;
 
-        function setupEventListeners() {
-            // Language toggle
-            document.getElementById('languageToggle').addEventListener('click', toggleLanguage);
+                const totalLoss = callbackCost + planningCost + paperworkCost + noshowCost + otherCost;
+                const dailyLoss = Math.round(totalLoss / 365);
 
-            // ROI Calculator sliders
-            document.getElementById('companySize').addEventListener('input', function(e) {
-                companySize = parseInt(e.target.value);
-                document.getElementById('companySizeValue').textContent = companySize;
-                updateROICalculation();
+                // Update UI
+                document.getElementById('callbackCost').textContent = callbackCost.toLocaleString('nl-NL');
+                document.getElementById('planningCost').textContent = planningCost.toLocaleString('nl-NL');
+                document.getElementById('paperworkCost').textContent = paperworkCost.toLocaleString('nl-NL');
+                document.getElementById('noshowCost').textContent = Math.round(noshowCost).toLocaleString('nl-NL');
+                document.getElementById('otherCost').textContent = otherCost.toLocaleString('nl-NL');
+                document.getElementById('totalLoss').textContent = Math.round(totalLoss).toLocaleString('nl-NL');
+                document.getElementById('dailyLoss').textContent = dailyLoss.toLocaleString('nl-NL');
+            }
+
+            async function trackROICalculatorUsage() {
+                if (!isSupabaseConfigured()) return;
+                
+                try {
+                    const sessionId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+                    const techs = parseInt(techniciansSlider.value);
+                    const callbacks = parseInt(callbacksSlider.value);
+                    const noshowRate = parseInt(noshowSlider.value);
+                    
+                    const callbackCost = callbacks * 52 * 320;
+                    const planningCost = techs * 5625;
+                    const paperworkCost = techs * 3500;
+                    const noshowCost = (noshowRate / 100) * techs * 32000;
+                    const otherCost = 123000;
+                    const totalLoss = callbackCost + planningCost + paperworkCost + noshowCost + otherCost;
+                    
+                    await supabase
+                        .from('hvac_calculator_sessions')
+                        .insert([{
+                            session_id: sessionId,
+                            num_technicians: techs,
+                            callbacks_per_week: callbacks,
+                            noshow_rate: noshowRate,
+                            calculated_total_loss: Math.round(totalLoss),
+                            callback_cost: Math.round(callbackCost),
+                            planning_cost: Math.round(planningCost),
+                            paperwork_cost: Math.round(paperworkCost),
+                            noshow_cost: Math.round(noshowCost),
+                            other_cost: otherCost,
+                            timestamp: new Date().toISOString()
+                        }]);
+                } catch (error) {
+                    console.log('Calculator tracking error (non-critical):', error);
+                }
+            }
+
+            techniciansSlider.addEventListener('input', function() {
+                updateCalculator();
                 trackROICalculatorUsage();
             });
 
-            document.getElementById('annualRevenue').addEventListener('input', function(e) {
-                annualRevenue = parseInt(e.target.value);
-                document.getElementById('annualRevenueValue').textContent = (annualRevenue / 1000000).toFixed(1);
-                updateROICalculation();
+            callbacksSlider.addEventListener('input', function() {
+                updateCalculator();
                 trackROICalculatorUsage();
             });
 
-            // Button clicks
-            document.getElementById('headerDemoBtn').addEventListener('click', handleDemoRequest);
-            document.getElementById('heroAssessmentBtn').addEventListener('click', scrollToContact);
-            document.getElementById('heroDemoBtn').addEventListener('click', handleDemoRequest);
-            document.getElementById('roiAnalysisBtn').addEventListener('click', handleROIAnalysisRequest);
-            document.getElementById('submitContactForm').addEventListener('click', handleContactFormSubmit);
-        }
-
-        function toggleLanguage() {
-            currentLanguage = currentLanguage === 'nl' ? 'en' : 'nl';
-            document.getElementById('currentLang').textContent = currentLanguage.toUpperCase();
-            updateTranslations();
-        }
-
-        function updateTranslations() {
-            const t = translations[currentLanguage];
-            document.querySelectorAll('[data-translate]').forEach(element => {
-                const key = element.getAttribute('data-translate');
-                if (t[key]) {
-                    if (element.tagName === 'INPUT' && element.type !== 'checkbox') {
-                        element.placeholder = t[key];
-                    } else {
-                        element.textContent = t[key];
-                    }
-                }
+            noshowSlider.addEventListener('input', function() {
+                updateCalculator();
+                trackROICalculatorUsage();
             });
-        }
 
-        function setupScrollEffects() {
-            window.addEventListener('scroll', function() {
-                const header = document.getElementById('header');
-                if (window.scrollY > 50) {
-                    header.classList.add('bg-white', 'shadow-lg');
-                    header.classList.remove('bg-transparent');
-                } else {
-                    header.classList.remove('bg-white', 'shadow-lg');
-                    header.classList.add('bg-transparent');
-                }
-            });
-        }
+            // Modal functionality
+            const modal = document.getElementById('contactModal');
+            const closeModalBtn = document.getElementById('closeModal');
+            
+            const ctaButtons = [
+                'headerCTABtn', 'heroCalculateBtn', 'heroContactBtn', 
+                'painPointsCTABtn', 'calculatorCTABtn'
+            ];
 
-        function calculateROI() {
-            const timeSavings = companySize * 1800; // €1800 per employee time savings
-            const errorSavings = annualRevenue * 0.009; // 0.9% error cost reduction
-            const processSavings = companySize * 480; // €480 per employee process optimization
-            const scalingSavings = Math.min(annualRevenue * 0.004, 20000); // 0.4% scaling benefits, max 20k
-
-            return {
-                timeSavings,
-                errorSavings,
-                processSavings,
-                scalingSavings,
-                total: timeSavings + errorSavings + processSavings + scalingSavings
-            };
-        }
-
-        function updateROICalculation() {
-            const savings = calculateROI();
-
-            document.getElementById('timeSavings').textContent = Math.round(savings.timeSavings / 1000);
-            document.getElementById('errorSavings').textContent = Math.round(savings.errorSavings / 1000);
-            document.getElementById('processSavings').textContent = Math.round(savings.processSavings / 1000);
-            document.getElementById('scalingSavings').textContent = Math.round(savings.scalingSavings / 1000);
-            document.getElementById('totalSavings').textContent = Math.round(savings.total / 1000);
-            document.getElementById('roiPercentage').textContent = Math.round((savings.total / 20000) * 100);
-        }
-
-        async function updateDatabaseStatus() {
-            const statusElement = document.getElementById('dbStatus');
-
-            if (!isSupabaseConfigured()) {
-                statusElement.innerHTML = '<span class="text-orange-400">⚠ Not Configured</span>';
-                return;
-            }
-
-            try {
-                // Test basic connection
-                const { data, error } = await supabase
-                    .from('hvac_leads')
-                    .select('count', { count: 'exact', head: true });
-
-                if (error) {
-                    console.error('Database connection test failed:', error);
-                    statusElement.innerHTML = `<span class="text-red-400">✗ Error: ${error.message}</span>`;
-                } else {
-                    statusElement.innerHTML = '<span class="text-green-400">✓ Connected</span>';
-                }
-            } catch (error) {
-                console.error('Database status check failed:', error);
-                statusElement.innerHTML = `<span class="text-red-400">✗ Connection Failed</span>`;
-            }
-        }
-
-        async function trackROICalculatorUsage() {
-            if (!isSupabaseConfigured()) return;
-
-            try {
-                const sessionId = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
-                const savings = calculateROI();
-
-                await supabase
-                    .from('roi_calculator_sessions')
-                    .insert([{
-                        session_id: sessionId,
-                        company_size: companySize,
-                        annual_revenue: annualRevenue,
-                        calculated_savings: Math.round(savings.total),
-                        language_preference: currentLanguage
-                    }]);
-            } catch (error) {
-                console.log('Analytics tracking error (non-critical):', error);
-            }
-        }
-
-        async function handleDemoRequest() {
-            if (!isSupabaseConfigured()) {
-                const message = currentLanguage === 'nl'
-                    ? 'Demo functionaliteit: Supabase nog niet geconfigureerd. Zie de code commentaren voor setup instructies.'
-                    : 'Demo functionality: Supabase not configured yet. See code comments for setup instructions.';
-                alert(message);
-                return;
-            }
-
-            try {
-                const savings = calculateROI();
-
-                await supabase
-                    .from('hvac_leads')
-                    .insert([{
-                        name: 'Demo Request',
-                        email: 'demo-request@placeholder.com',
-                        company: 'Demo Request',
-                        technicians_range: 'Unknown',
-                        annual_revenue_range: 'Unknown',
-                        biggest_challenge: 'demo_request',
-                        language_preference: currentLanguage,
-                        estimated_company_size: companySize,
-                        estimated_annual_revenue: annualRevenue,
-                        calculated_savings: Math.round(savings.total),
-                        source: 'demo_button',
-                        page_language: currentLanguage
-                    }]);
-
-                const message = currentLanguage === 'nl'
-                    ? 'Demo aanvraag geregistreerd! We nemen contact op om een demo in te plannen.'
-                    : 'Demo request registered! We\'ll contact you to schedule a demo.';
-                alert(message);
-            } catch (error) {
-                console.error('Demo request error:', error);
-                const errorMessage = currentLanguage === 'nl'
-                    ? 'Fout bij demo aanvraag. Probeer later opnieuw.'
-                    : 'Error with demo request. Please try again later.';
-                alert(errorMessage);
-            }
-        }
-
-        async function handleROIAnalysisRequest() {
-            if (!isSupabaseConfigured()) {
-                const message = currentLanguage === 'nl'
-                    ? 'ROI Calculator functionaliteit: Supabase nog niet geconfigureerd. Zie de code commentaren voor setup instructies.'
-                    : 'ROI Calculator functionality: Supabase not configured yet. See code comments for setup instructions.';
-                alert(message);
-                return;
-            }
-
-            try {
-                const savings = calculateROI();
-
-                await supabase
-                    .from('hvac_leads')
-                    .insert([{
-                        name: 'ROI Analysis Request',
-                        email: 'roi-analysis@placeholder.com',
-                        company: 'ROI Analysis Request',
-                        technicians_range: companySize.toString(),
-                        annual_revenue_range: (annualRevenue / 1000000).toFixed(1) + 'M',
-                        biggest_challenge: 'roi_analysis_request',
-                        language_preference: currentLanguage,
-                        estimated_company_size: companySize,
-                        estimated_annual_revenue: annualRevenue,
-                        calculated_savings: Math.round(savings.total),
-                        callback_reduction_savings: Math.round(savings.timeSavings),
-                        efficiency_savings: Math.round(savings.errorSavings),
-                        energy_savings: Math.round(savings.processSavings),
-                        admin_savings: Math.round(savings.scalingSavings),
-                        source: 'roi_calculator',
-                        page_language: currentLanguage
-                    }]);
-
-                const message = currentLanguage === 'nl'
-                    ? 'ROI analyse aanvraag geregistreerd! We sturen u een gedetailleerd rapport.'
-                    : 'ROI analysis request registered! We\'ll send you a detailed report.';
-                alert(message);
-            } catch (error) {
-                console.error('ROI analysis request error:', error);
-                const errorMessage = currentLanguage === 'nl'
-                    ? 'Fout bij ROI analyse aanvraag. Probeer later opnieuw.'
-                    : 'Error with ROI analysis request. Please try again later.';
-                alert(errorMessage);
-            }
-        }
-
-        async function handleContactFormSubmit() {
-            if (isSubmitting) return;
-
-            if (!isSupabaseConfigured()) {
-                const message = currentLanguage === 'nl'
-                    ? 'Form functionaliteit: Supabase nog niet geconfigureerd. Zie de code commentaren voor setup instructies.'
-                    : 'Form functionality: Supabase not configured yet. See code comments for setup instructions.';
-                alert(message);
-                return;
-            }
-
-            const name = document.getElementById('contactName').value.trim();
-            const email = document.getElementById('contactEmail').value.trim();
-            const company = document.getElementById('contactCompany').value.trim();
-            const technicians = document.getElementById('contactEmployees').value;
-            const revenue = document.getElementById('contactRevenue').value;
-            const challenge = document.getElementById('contactChallenge').value;
-            const privacyConsent = document.getElementById('privacyConsent').checked;
-
-            // Validation
-            if (!name || !email || !company || !technicians || !revenue || !challenge || !privacyConsent) {
-                const message = currentLanguage === 'nl'
-                    ? 'Vul alle velden in en accepteer de privacyvoorwaarden.'
-                    : 'Please fill all fields and accept privacy terms.';
-                alert(message);
-                return;
-            }
-
-            isSubmitting = true;
-            showSubmittingState();
-            hideMessages();
-
-            try {
-                const savings = calculateROI();
-
-                const leadData = {
-                    name: name,
-                    email: email,
-                    company: company,
-                    technicians_range: technicians,
-                    annual_revenue_range: revenue,
-                    biggest_challenge: challenge,
-                    language_preference: currentLanguage,
-                    estimated_company_size: companySize,
-                    estimated_annual_revenue: annualRevenue,
-                    calculated_savings: Math.round(savings.total),
-                    callback_reduction_savings: Math.round(savings.timeSavings),
-                    efficiency_savings: Math.round(savings.errorSavings),
-                    energy_savings: Math.round(savings.processSavings),
-                    admin_savings: Math.round(savings.scalingSavings),
-                    submitted_at: new Date().toISOString(),
-                    source: 'landing_page',
-                    user_agent: navigator.userAgent,
-                    page_language: currentLanguage
-                };
-
-                const { data, error } = await supabase
-                    .from('hvac_leads')
-                    .insert([leadData])
-                    .select();
-
-                if (error) {
-                    throw error;
-                }
-
-                console.log('Lead successfully saved:', data);
-                showSuccessMessage();
-                resetContactForm();
-
-                // Optional: Track conversion event
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'conversion', {
-                        'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
-                        'value': Math.round(savings.total / 1000),
-                        'currency': 'EUR'
+            ctaButtons.forEach(btnId => {
+                const btn = document.getElementById(btnId);
+                if (btn) {
+                    btn.addEventListener('click', function() {
+                        if (btnId === 'heroCalculateBtn') {
+                            document.getElementById('calculator').scrollIntoView({ behavior: 'smooth' });
+                        } else {
+                            modal.classList.remove('hidden');
+                        }
                     });
                 }
+            });
 
-            } catch (error) {
-                console.error('Error submitting lead:', error);
-
-                // Detailed error logging for debugging
-                if (error.message) {
-                    console.error('Error message:', error.message);
-                }
-                if (error.details) {
-                    console.error('Error details:', error.details);
-                }
-                if (error.hint) {
-                    console.error('Error hint:', error.hint);
-                }
-
-                // Show user-friendly error with details in console
-                const errorElement = document.getElementById('errorMessage');
-                const errorText = currentLanguage === 'nl'
-                    ? `Er is een fout opgetreden: ${error.message || 'Onbekende fout'}. Controleer de browser console voor meer details.`
-                    : `An error occurred: ${error.message || 'Unknown error'}. Check browser console for details.`;
-
-                errorElement.querySelector('span').textContent = errorText;
-                showErrorMessage();
-            } finally {
-                isSubmitting = false;
-                hideSubmittingState();
+            if (closeModalBtn) {
+                closeModalBtn.addEventListener('click', function() {
+                    modal.classList.add('hidden');
+                });
             }
-        }
 
-        function showSubmittingState() {
-            const button = document.getElementById('submitContactForm');
-            const buttonText = document.getElementById('submitButtonText');
-            const buttonIcon = document.getElementById('submitButtonIcon');
-
-            button.disabled = true;
-            button.classList.add('bg-gray-400', 'cursor-not-allowed');
-            button.classList.remove('bg-orange-500', 'hover:bg-orange-600');
-
-            buttonText.textContent = currentLanguage === 'nl' ? 'Bezig met verzenden...' : 'Submitting...';
-            buttonIcon.className = 'ml-2 h-5 w-5 spinner';
-        }
-
-        function hideSubmittingState() {
-            const button = document.getElementById('submitContactForm');
-            const buttonText = document.getElementById('submitButtonText');
-            const buttonIcon = document.getElementById('submitButtonIcon');
-
-            button.disabled = false;
-            button.classList.remove('bg-gray-400', 'cursor-not-allowed');
-            button.classList.add('bg-orange-500', 'hover:bg-orange-600');
-
-            const t = translations[currentLanguage];
-            buttonText.textContent = t.bookMyAssessment;
-            buttonIcon.className = 'ml-2 h-5 w-5';
-            buttonIcon.setAttribute('data-lucide', 'arrow-right');
-            lucide.createIcons();
-        }
-
-        function showSuccessMessage() {
-            document.getElementById('successMessage').classList.remove('hidden');
-            document.getElementById('successMessage').classList.add('slide-up');
-        }
-
-        function showErrorMessage() {
-            document.getElementById('errorMessage').classList.remove('hidden');
-            document.getElementById('errorMessage').classList.add('slide-up');
-        }
-
-        function hideMessages() {
-            document.getElementById('successMessage').classList.add('hidden');
-            document.getElementById('errorMessage').classList.add('hidden');
-        }
-
-        function resetContactForm() {
-            document.getElementById('contactName').value = '';
-            document.getElementById('contactEmail').value = '';
-            document.getElementById('contactCompany').value = '';
-            document.getElementById('contactEmployees').value = '';
-            document.getElementById('contactRevenue').value = '';
-            document.getElementById('contactChallenge').value = '';
-            document.getElementById('privacyConsent').checked = false;
-        }
-
-        function scrollToContact() {
-            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    modal.classList.add('hidden');
                 }
             });
+
+            // Form submission
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', async function(e) {
+                    e.preventDefault();
+
+                    const submitBtn = document.getElementById('submitBtn');
+                    const btnText = document.getElementById('btnText');
+                    const successMsg = document.getElementById('successMessage');
+                    const errorMsg = document.getElementById('errorMessage');
+
+                    submitBtn.disabled = true;
+                    btnText.textContent = translations[currentLang].formSending;
+
+                    const formData = {
+                        name: document.getElementById('name').value,
+                        email: document.getElementById('email').value,
+                        company: document.getElementById('company').value,
+                        phone: document.getElementById('phone').value,
+                        technicians_range: document.getElementById('techCount').value,
+                        biggest_painpoint: document.getElementById('painpoint').value,
+                        submitted_at: new Date().toISOString(),
+                        num_technicians: parseInt(techniciansSlider.value),
+                        callbacks_per_week: parseInt(callbacksSlider.value),
+                        noshow_rate: parseInt(noshowSlider.value),
+                        calculated_loss: parseInt(document.getElementById('totalLoss').textContent.replace(/\./g, '')),
+                        language: currentLang
+                    };
+
+                    try {
+                        if (isSupabaseConfigured()) {
+                            const { data, error } = await supabase
+                                .from('hvac_leads')
+                                .insert([formData]);
+
+                            if (error) throw error;
+
+                            successMsg.classList.remove('hidden');
+                            errorMsg.classList.add('hidden');
+                            contactForm.reset();
+
+                            setTimeout(() => {
+                                modal.classList.add('hidden');
+                                successMsg.classList.add('hidden');
+                            }, 3000);
+                        } else {
+                            console.log('Form data:', formData);
+                            successMsg.classList.remove('hidden');
+                            errorMsg.classList.add('hidden');
+                            contactForm.reset();
+
+                            setTimeout(() => {
+                                modal.classList.add('hidden');
+                                successMsg.classList.add('hidden');
+                            }, 3000);
+                        }
+                    } catch (error) {
+                        console.error('Error:', error);
+                        errorMsg.classList.remove('hidden');
+                        successMsg.classList.add('hidden');
+                    } finally {
+                        submitBtn.disabled = false;
+                        btnText.textContent = translations[currentLang].formSubmit;
+                        lucide.createIcons();
+                    }
+                });
+            }
+
+            // Initial calculator update
+            updateCalculator();
         });
     </script>
 </body>
