@@ -79,6 +79,60 @@
             color: #dc2626;
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
+
+        /* Mobile Responsive Styles */
+        @media (max-width: 768px) {
+            .pain-card:hover {
+                transform: none;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            }
+
+            .lang-switch {
+                padding: 0.125rem;
+            }
+
+            .lang-btn {
+                padding: 0.375rem 0.75rem;
+                font-size: 0.875rem;
+            }
+
+            .cost-counter {
+                font-size: 2.5rem !important;
+            }
+
+            .modal {
+                margin: 1rem;
+                max-height: 90vh;
+                overflow-y: auto;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem !important;
+                line-height: 1.1;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem !important;
+            }
+
+            .pain-title {
+                font-size: 1.25rem !important;
+            }
+
+            .section-title {
+                font-size: 1.75rem !important;
+            }
+
+            .cost-counter {
+                font-size: 2rem !important;
+            }
+
+            .calc-input {
+                font-size: 16px !important; /* Prevents zoom on iOS */
+            }
+        }
     </style>
 </head>
 <body class="min-h-screen bg-gray-50">
@@ -350,24 +404,24 @@
 
     <!-- Sticky Header -->
     <header id="header" class="fixed w-full top-0 z-50 bg-white shadow-md">
-        <div class="container mx-auto px-4 md:px-6 py-3">
+        <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
-                <div class="flex items-center space-x-3">
-                    <svg class="h-10 w-10" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="flex items-center space-x-2 md:space-x-3">
+                    <svg class="h-8 w-8 md:h-10 md:w-10" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="50" cy="50" r="45" fill="#1e40af"/>
                         <path d="M55 25L35 50H50L45 75L65 50H50L55 25Z" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"/>
                     </svg>
                     <div class="flex flex-col">
-                        <span class="text-xl font-bold text-gray-900">TechFlow24</span>
-                        <span class="text-xs text-gray-600">HVAC AI Platform</span>
+                        <span class="text-lg md:text-xl font-bold text-gray-900">TechFlow24</span>
+                        <span class="text-xs text-gray-600 hidden sm:block">HVAC AI Platform</span>
                     </div>
                 </div>
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-2 md:gap-4">
                     <div class="lang-switch">
                         <div class="lang-btn active" data-lang="nl" onclick="setLanguage('nl')">NL</div>
                         <div class="lang-btn" data-lang="en" onclick="setLanguage('en')">EN</div>
                     </div>
-                    <button id="headerCTABtn" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                    <button id="headerCTABtn" class="bg-red-600 hover:bg-red-700 text-white px-3 py-2 md:px-6 md:py-3 rounded-lg font-semibold transition-colors text-sm md:text-base">
                         <span data-i18n="headerCTA">Stop Het Verlies</span>
                     </button>
                 </div>
@@ -376,46 +430,46 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="gradient-flow text-white pt-24 pb-16">
-        <div class="container mx-auto px-4 md:px-6">
+    <section class="gradient-flow text-white pt-20 md:pt-24 pb-12 md:pb-16">
+        <div class="container mx-auto px-4">
             <div class="max-w-5xl mx-auto text-center">
-                <div class="inline-block bg-white/20 backdrop-blur px-6 py-3 rounded-full mb-6">
-                    <p class="text-sm md:text-base font-semibold" data-i18n="heroValidation">🚨 GEVALIDEERD BIJ 47 HVAC BEDRIJVEN</p>
+                <div class="inline-block bg-white/20 backdrop-blur px-4 py-2 md:px-6 md:py-3 rounded-full mb-4 md:mb-6">
+                    <p class="text-xs md:text-base font-semibold" data-i18n="heroValidation">🚨 GEVALIDEERD BIJ 47 HVAC BEDRIJVEN</p>
                 </div>
-                
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight">
+
+                <h1 class="hero-title text-3xl md:text-6xl lg:text-7xl font-black mb-4 md:mb-6 leading-tight">
                     <span data-i18n="heroTitle1">Uw HVAC Bedrijf Verliest</span>
-                    <span class="block text-yellow-300 cost-counter">€273.000</span>
+                    <span class="block text-yellow-300 cost-counter text-4xl md:text-6xl lg:text-8xl">€273.000</span>
                     <span class="block" data-i18n="heroTitle2">Per Jaar</span>
                 </h1>
-                
-                <p class="text-xl md:text-2xl mb-8 text-red-100 leading-relaxed max-w-3xl mx-auto">
+
+                <p class="hero-subtitle text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-red-100 leading-relaxed max-w-3xl mx-auto">
                     <span data-i18n="heroSubtitle">Door 8 operationele problemen die u <strong>vandaag</strong> kunt oplossen met AI.</span>
-                    <span class="block mt-2 text-2xl md:text-3xl font-bold text-white" data-i18n="heroROI">Terugverdientijd: 15 dagen.</span>
+                    <span class="block mt-2 text-xl md:text-2xl lg:text-3xl font-bold text-white" data-i18n="heroROI">Terugverdientijd: 15 dagen.</span>
                 </p>
 
-                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                    <button id="heroCalculateBtn" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 shadow-2xl">
-                        <i data-lucide="calculator" class="inline mr-2 h-5 w-5"></i>
+                <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-8 md:mb-12 px-4">
+                    <button id="heroCalculateBtn" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-6 py-3 md:px-8 md:py-4 rounded-lg font-bold text-base md:text-lg transition-all transform hover:scale-105 shadow-2xl">
+                        <i data-lucide="calculator" class="inline mr-2 h-4 w-4 md:h-5 md:w-5"></i>
                         <span data-i18n="heroBtn1">Bereken Uw Verlies</span>
                     </button>
-                    <button id="heroContactBtn" class="bg-white hover:bg-gray-100 text-red-600 px-8 py-4 rounded-lg font-bold text-lg transition-all border-2 border-white">
-                        <i data-lucide="phone" class="inline mr-2 h-5 w-5"></i>
+                    <button id="heroContactBtn" class="bg-white hover:bg-gray-100 text-red-600 px-6 py-3 md:px-8 md:py-4 rounded-lg font-bold text-base md:text-lg transition-all border-2 border-white">
+                        <i data-lucide="phone" class="inline mr-2 h-4 w-4 md:h-5 md:w-5"></i>
                         <span data-i18n="heroBtn2">Stop Het Verlies Nu</span>
                     </button>
                 </div>
 
-                <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-red-100">
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 text-red-100 text-sm md:text-base">
                     <div class="flex items-center gap-2">
-                        <i data-lucide="check-circle" class="h-5 w-5 text-green-400"></i>
+                        <i data-lucide="check-circle" class="h-4 w-4 md:h-5 md:w-5 text-green-400"></i>
                         <span data-i18n="heroBadge1">500+ HVAC Bedrijven</span>
                     </div>
                     <div class="flex items-center gap-2">
-                        <i data-lucide="check-circle" class="h-5 w-5 text-green-400"></i>
+                        <i data-lucide="check-circle" class="h-4 w-4 md:h-5 md:w-5 text-green-400"></i>
                         <span data-i18n="heroBadge2">€208k Gemiddelde Besparing</span>
                     </div>
                     <div class="flex items-center gap-2">
-                        <i data-lucide="check-circle" class="h-5 w-5 text-green-400"></i>
+                        <i data-lucide="check-circle" class="h-4 w-4 md:h-5 md:w-5 text-green-400"></i>
                         <span data-i18n="heroBadge3">15 Dagen ROI</span>
                     </div>
                 </div>
@@ -424,42 +478,42 @@
     </section>
 
     <!-- Pain Points Section -->
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-i18n="painTitle">
+    <section class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8 md:mb-12">
+                <h2 class="section-title text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" data-i18n="painTitle">
                     De 8 Pijnpunten Die Uw Geld Kosten
                 </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto" data-i18n="painSubtitle">
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-4" data-i18n="painSubtitle">
                     Herkenbaar? Elk van deze problemen kost u tienduizenden euro's per jaar.
                     <strong class="text-red-600">Totaal: €273.000</strong>
                 </p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 max-w-6xl mx-auto">
                 
                 <!-- Pain Point 1 -->
-                <div class="pain-card bg-red-50 border-2 border-red-200 rounded-xl p-6 hover:border-red-400">
+                <div class="pain-card bg-red-50 border-2 border-red-200 rounded-xl p-4 md:p-6 hover:border-red-400">
                     <div class="flex items-start justify-between mb-4">
-                        <div class="bg-red-600 text-white rounded-lg p-3">
-                            <i data-lucide="alert-triangle" class="h-8 w-8"></i>
+                        <div class="bg-red-600 text-white rounded-lg p-2 md:p-3">
+                            <i data-lucide="alert-triangle" class="h-6 w-6 md:h-8 md:w-8"></i>
                         </div>
                         <div class="text-right">
-                            <div class="text-3xl font-black text-red-600">€95k</div>
-                            <div class="text-sm text-gray-600" data-i18n="perYear">per jaar verlies</div>
+                            <div class="text-2xl md:text-3xl font-black text-red-600">€95k</div>
+                            <div class="text-xs md:text-sm text-gray-600" data-i18n="perYear">per jaar verlies</div>
                         </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="pain1Title">P1: Callback Crisis</h3>
-                    <p class="text-gray-700 mb-4" data-i18n="pain1Problem">
+                    <h3 class="pain-title text-xl md:text-2xl font-bold text-gray-900 mb-3" data-i18n="pain1Title">P1: Callback Crisis</h3>
+                    <p class="text-sm md:text-base text-gray-700 mb-4" data-i18n="pain1Problem">
                         <strong>Het Probleem:</strong> 20% van uw service calls zijn callbacks. €285-340 per callback.
                     </p>
-                    <div class="bg-white rounded-lg p-4 mb-4">
-                        <p class="text-sm text-gray-800 italic" data-i18n="pain1Story">
-                            "Monteur repareert verwarmingsketel op maandag. Donderdag belt klant: 'Ketel doet het niet!' 
+                    <div class="bg-white rounded-lg p-3 md:p-4 mb-4">
+                        <p class="text-xs md:text-sm text-gray-800 italic" data-i18n="pain1Story">
+                            "Monteur repareert verwarmingsketel op maandag. Donderdag belt klant: 'Ketel doet het niet!'
                             Monteur moet terug, geen onderdelen, moet nóg een keer komen."
                         </p>
                     </div>
-                    <div class="flex items-center gap-2 text-red-700 font-semibold">
+                    <div class="flex items-center gap-2 text-red-700 font-semibold text-sm md:text-base">
                         <i data-lucide="arrow-right" class="h-4 w-4"></i>
                         <span data-i18n="pain1Impact">140 callbacks/jaar = €95.000 verlies</span>
                     </div>
@@ -675,30 +729,30 @@
     </section>
 
     <!-- ROI Calculator Section -->
-    <section id="calculator" class="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4" data-i18n="calcTitle">
+    <section id="calculator" class="py-12 md:py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-8 md:mb-12">
+                <h2 class="section-title text-2xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4" data-i18n="calcTitle">
                     Bereken Uw Specifieke Verlies
                 </h2>
-                <p class="text-xl text-gray-600" data-i18n="calcSubtitle">
+                <p class="text-lg md:text-xl text-gray-600 px-4" data-i18n="calcSubtitle">
                     Hoeveel verliest ÚW bedrijf exact? Reken het uit in 30 seconden.
                 </p>
             </div>
 
-            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-8">
-                <div class="grid md:grid-cols-2 gap-8">
+            <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl p-4 md:p-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                     <div>
-                        <h3 class="text-2xl font-bold text-gray-900 mb-6" data-i18n="calcInputTitle">Uw Bedrijfsgegevens</h3>
-                        
-                        <div class="space-y-6">
+                        <h3 class="text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6" data-i18n="calcInputTitle">Uw Bedrijfsgegevens</h3>
+
+                        <div class="space-y-4 md:space-y-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">
                                     <span data-i18n="calcTechnicians">Aantal Monteurs:</span> <span id="technicianCount" class="text-blue-600 font-bold">18</span>
                                 </label>
-                                <input type="range" id="technicians" min="1" max="50" value="18" 
-                                    class="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer">
-                                <div class="flex justify-between text-sm text-gray-500 mt-1">
+                                <input type="range" id="technicians" min="1" max="50" value="18"
+                                    class="calc-input w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                                <div class="flex justify-between text-xs md:text-sm text-gray-500 mt-1">
                                     <span>1</span>
                                     <span>50</span>
                                 </div>
@@ -708,9 +762,9 @@
                                 <label class="block text-sm font-medium text-gray-700 mb-2">
                                     <span data-i18n="calcCallbacks">Callbacks Per Week:</span> <span id="callbackCount" class="text-red-600 font-bold">7</span>
                                 </label>
-                                <input type="range" id="callbacks" min="0" max="20" value="7" 
-                                    class="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer">
-                                <div class="flex justify-between text-sm text-gray-500 mt-1">
+                                <input type="range" id="callbacks" min="0" max="20" value="7"
+                                    class="calc-input w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                                <div class="flex justify-between text-xs md:text-sm text-gray-500 mt-1">
                                     <span>0</span>
                                     <span>20/week</span>
                                 </div>
@@ -720,9 +774,9 @@
                                 <label class="block text-sm font-medium text-gray-700 mb-2">
                                     <span data-i18n="calcNoshow">No-Show Rate:</span> <span id="noshowRate" class="text-blue-600 font-bold">15</span>%
                                 </label>
-                                <input type="range" id="noshow" min="0" max="30" value="15" 
-                                    class="w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer">
-                                <div class="flex justify-between text-sm text-gray-500 mt-1">
+                                <input type="range" id="noshow" min="0" max="30" value="15"
+                                    class="calc-input w-full h-3 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                                <div class="flex justify-between text-xs md:text-sm text-gray-500 mt-1">
                                     <span>0%</span>
                                     <span>30%</span>
                                 </div>
@@ -780,44 +834,44 @@
 
     <!-- Contact Modal -->
     <div id="contactModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
-        <div class="bg-white rounded-xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
-            <div class="flex justify-between items-center mb-6">
-                <h3 class="text-3xl font-bold text-gray-900" data-i18n="modalTitle">Stop Het Verlies Nu</h3>
+        <div class="modal bg-white rounded-xl p-4 md:p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-4 md:mb-6">
+                <h3 class="text-xl md:text-3xl font-bold text-gray-900" data-i18n="modalTitle">Stop Het Verlies Nu</h3>
                 <button id="closeModal" class="text-gray-500 hover:text-gray-700">
-                    <i data-lucide="x" class="h-8 w-8"></i>
+                    <i data-lucide="x" class="h-6 w-6 md:h-8 md:w-8"></i>
                 </button>
             </div>
 
-            <form id="contactForm" class="space-y-4">
-                <div class="grid md:grid-cols-2 gap-4">
+            <form id="contactForm" class="space-y-3 md:space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formName">Naam *</label>
                         <input type="text" id="name" required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                            class="calc-input w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-base">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formEmail">Email *</label>
                         <input type="email" id="email" required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                            class="calc-input w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-base">
                     </div>
                 </div>
 
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formCompany">Bedrijfsnaam *</label>
                     <input type="text" id="company" required
-                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                        class="calc-input w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-base">
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formPhone">Telefoon *</label>
                         <input type="tel" id="phone" required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                            class="calc-input w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-base">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formTechnicians">Aantal Monteurs *</label>
                         <select id="techCount" required
-                            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                            class="calc-input w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-base">
                             <option value="" data-i18n="formTechSelect">Selecteer</option>
                             <option value="1-4" data-i18n="formTech1">1-4 monteurs</option>
                             <option value="5-15" data-i18n="formTech2">5-15 monteurs</option>
@@ -829,7 +883,7 @@
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-1" data-i18n="formPainpoint">Grootste Pijnpunt *</label>
                     <select id="painpoint" required
-                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent">
+                        class="calc-input w-full px-3 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent text-base">
                         <option value="" data-i18n="formPainSelect">Selecteer</option>
                         <option value="callbacks" data-i18n="formPain1">Te veel callbacks</option>
                         <option value="planning" data-i18n="formPain2">Handmatige planning chaos</option>
