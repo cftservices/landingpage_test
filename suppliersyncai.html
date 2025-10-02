@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupplierSync AI - TechFlow24</title>
+    <meta name="description" content="AI-powered procurement intelligence voor Nederlandse industriële leveranciers. Optimaliseer supplier performance, voorraad, en inkoop beslissingen.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='45' fill='%231e40af'/%3E%3Cpath d='M55 25L35 50H50L45 75L65 50H50L55 25Z' fill='%23fbbf24' stroke='%23fbbf24' stroke-width='2'/%3E%3C/svg%3E">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="min-h-screen bg-gray-50">
+
+    <!-- Sticky Header -->
+    <header class="fixed w-full top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2 md:space-x-3 cursor-pointer hover:opacity-80 transition-opacity">
+                    <svg class="h-8 w-8 md:h-10 md:w-10" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="45" fill="#1e40af"/>
+                        <path d="M55 25L35 50H50L45 75L65 50H50L55 25Z" fill="#fbbf24" stroke="#fbbf24" stroke-width="2"/>
+                    </svg>
+                    <div class="flex flex-col">
+                        <span class="text-lg md:text-xl font-bold text-gray-900">TechFlow24</span>
+                        <span class="text-xs text-gray-600 hidden sm:block">SupplierSync AI</span>
+                    </div>
+                </a>
+                <a href="index.html" class="text-blue-600 hover:text-blue-700 font-semibold flex items-center gap-2">
+                    <i data-lucide="arrow-left" class="h-5 w-5"></i>
+                    <span class="hidden sm:inline">Terug naar Home</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white pt-24 md:pt-32 pb-16">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <div class="inline-block bg-white/20 backdrop-blur px-6 py-3 rounded-full mb-6">
+                    <p class="font-semibold">🏭 Supply Chain Intelligence Platform</p>
+                </div>
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    SupplierSync AI
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-blue-100">
+                    AI-powered procurement intelligence voor Nederlandse industriële leveranciers
+                </p>
+                <p class="text-lg mb-8">
+                    <span class="bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg font-bold">Coming Soon</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Preview -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+                    Platform Features
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="border-2 border-blue-200 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-blue-100 p-3 rounded-lg">
+                                <i data-lucide="package" class="h-6 w-6 text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Product-Centric View</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✓ 15,420 Products actively tracked</li>
+                            <li>✓ Price range analysis & market positioning</li>
+                            <li>✓ Top supplier rankings with match scores</li>
+                            <li>✓ Demand forecasting & alternatives</li>
+                            <li>✓ Shopping list coverage optimization</li>
+                        </ul>
+                    </div>
+
+                    <div class="border-2 border-indigo-200 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-indigo-100 p-3 rounded-lg">
+                                <i data-lucide="building" class="h-6 w-6 text-indigo-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Supplier-Centric View</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✓ 284 Suppliers continuously monitored</li>
+                            <li>✓ Performance clustering & risk indicators</li>
+                            <li>✓ Coverage analysis across categories</li>
+                            <li>✓ Recent offers with pricing trends</li>
+                            <li>✓ Alternative supplier suggestions</li>
+                        </ul>
+                    </div>
+
+                    <div class="border-2 border-green-200 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-green-100 p-3 rounded-lg">
+                                <i data-lucide="brain" class="h-6 w-6 text-green-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">AI-Powered Intelligence</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✓ RAG explanations for decisions</li>
+                            <li>✓ 87.4% average match score</li>
+                            <li>✓ Smart product-supplier compatibility</li>
+                            <li>✓ Context-aware recommendations</li>
+                            <li>✓ Automated supplier summaries</li>
+                        </ul>
+                    </div>
+
+                    <div class="border-2 border-red-200 rounded-xl p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="bg-red-100 p-3 rounded-lg">
+                                <i data-lucide="alert-triangle" class="h-6 w-6 text-red-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold">Real-Time Monitoring</h3>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li>✓ 23 price anomalies flagged</li>
+                            <li>✓ Proactive pricing irregularity alerts</li>
+                            <li>✓ Supplier behavior monitoring</li>
+                            <li>✓ Risk categorization</li>
+                            <li>✓ Live connection status</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">
+                Geïnteresseerd in SupplierSync AI?
+            </h2>
+            <p class="text-xl mb-8">
+                Neem contact op voor een demo en early access
+            </p>
+            <a href="mailto:info@techflow24.nl?subject=SupplierSync AI Interest" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 px-8 py-4 rounded-lg font-bold text-lg transition-all transform hover:scale-105 inline-flex items-center">
+                <i data-lucide="mail" class="mr-2 h-5 w-5"></i>
+                Contact Opnemen
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-gray-400">
+                © 2025 TechFlow24 - AI Transformation Partner |
+                <a href="index.html" class="hover:text-white">Home</a> |
+                <a href="hvac.html" class="hover:text-white">HVAC Platform</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
