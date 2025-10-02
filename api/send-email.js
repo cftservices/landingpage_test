@@ -73,6 +73,8 @@ ${new Date().toLocaleString('nl-NL', {
 
         // Use Resend API if key is available, otherwise just log
         const resendApiKey = process.env.RESEND_API_KEY;
+        const fromDomain = process.env.FROM_DOMAIN || 'plcholland.com';
+        const fromEmail = `TechFlow24 <noreply@${fromDomain}>`;
 
         if (resendApiKey) {
             // Send via Resend API
@@ -83,7 +85,7 @@ ${new Date().toLocaleString('nl-NL', {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({
-                    from: 'TechFlow24 <noreply@techflow24.nl>',
+                    from: fromEmail,
                     to: [recipientEmail],
                     subject: emailSubject,
                     text: emailBody,
