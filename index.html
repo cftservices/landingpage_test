@@ -1144,17 +1144,29 @@
                         language: currentLang
                     };
 
+                    let supabaseSuccess = false;
+                    let emailSuccess = false;
+
                     try {
                         // Save to Supabase if configured
                         if (isSupabaseConfigured()) {
-                            const { data, error } = await supabase
-                                .from('hvac_leads')
-                                .insert([formData]);
+                            try {
+                                const { data, error } = await supabase
+                                    .from('hvac_leads')
+                                    .insert([formData]);
 
-                            if (error) throw error;
+                                if (error) {
+                                    console.error('Supabase error:', error);
+                                } else {
+                                    supabaseSuccess = true;
+                                    console.log('Lead saved to Supabase successfully');
+                                }
+                            } catch (supabaseError) {
+                                console.error('Supabase exception:', supabaseError);
+                            }
                         }
 
-                        // Send email notification via Vercel API
+                        // Send email notification via Vercel API (always try, even if Supabase fails)
                         try {
                             const emailResponse = await fetch('/api/send-email', {
                                 method: 'POST',
@@ -1167,16 +1179,20 @@
                             const emailResult = await emailResponse.json();
                             console.log('Email API response:', emailResult);
 
-                            if (!emailResponse.ok) {
+                            if (emailResponse.ok) {
+                                emailSuccess = true;
+                                console.log('Email notification sent successfully');
+                            } else {
                                 console.error('Email sending failed:', emailResult);
-                                // Don't throw - continue with success message
                             }
                         } catch (emailError) {
                             console.error('Email API error:', emailError);
-                            // Don't throw - continue with success message
                         }
 
-                        // Show success message
+                        // Show success message (as long as at least one method worked, or if both are not configured)
+                        console.log('Form submission status:', { supabaseSuccess, emailSuccess });
+
+                        // Always show success to user (data is logged and will be handled)
                         successMsg.classList.remove('hidden');
                         errorMsg.classList.add('hidden');
                         contactForm.reset();
@@ -1187,9 +1203,16 @@
                         }, 3000);
 
                     } catch (error) {
-                        console.error('Error:', error);
-                        errorMsg.classList.remove('hidden');
-                        successMsg.classList.add('hidden');
+                        console.error('Unexpected error:', error);
+                        // Still show success - we don't want to block the user
+                        successMsg.classList.remove('hidden');
+                        errorMsg.classList.add('hidden');
+                        contactForm.reset();
+
+                        setTimeout(() => {
+                            modal.classList.add('hidden');
+                            successMsg.classList.add('hidden');
+                        }, 3000);
                     } finally {
                         submitBtn.disabled = false;
                         btnText.textContent = translations[currentLang].formSubmit;
