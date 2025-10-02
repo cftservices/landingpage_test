@@ -26,14 +26,45 @@ Het formulier verstuurt nu automatisch een email notificatie wanneer iemand het 
 ### Stap 4: Configureer Vercel Environment Variables
 1. Ga naar je project in Vercel dashboard
 2. Ga naar Settings → Environment Variables
-3. Voeg toe:
+3. Voeg de volgende variabelen toe:
+
+   **Email configuratie (verplicht):**
    - **RESEND_API_KEY**: [je Resend API key]
    - **RECIPIENT_EMAIL**: [jouw email adres waar je notificaties wilt ontvangen]
+   - **FROM_DOMAIN**: `plcholland.com` (of je eigen geverifieerde domein)
+
+   **Supabase configuratie (optioneel):**
+   - **SUPABASE_URL**: [je Supabase project URL]
+   - **SUPABASE_ANON_KEY**: [je Supabase anon/public key]
+
+4. Selecteer voor elke variabele "Production" (en optioneel "Preview" en "Development")
 
 ### Stap 5: Redeploy
 1. Ga naar Deployments tab
 2. Klik op de laatste deployment
 3. Klik "Redeploy"
+
+---
+
+## Supabase Configuratie (Optioneel)
+
+Als je leads ook in Supabase wilt opslaan:
+
+### Waar vind je de Supabase credentials?
+1. Ga naar je Supabase project: https://supabase.com/dashboard
+2. Ga naar Settings → API
+3. Kopieer:
+   - **Project URL** → gebruik als `SUPABASE_URL`
+   - **anon public** key → gebruik als `SUPABASE_ANON_KEY`
+
+### Voeg toe aan Vercel
+1. Ga naar Vercel → Settings → Environment Variables
+2. Voeg toe:
+   - `SUPABASE_URL` = [je Project URL]
+   - `SUPABASE_ANON_KEY` = [je anon public key]
+3. Redeploy
+
+**Let op:** De credentials staan nu veilig in environment variables en niet meer hardcoded in de HTML!
 
 ---
 

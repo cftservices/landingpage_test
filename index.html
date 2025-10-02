@@ -142,12 +142,32 @@
     
     <!-- Supabase Configuration -->
     <script>
-        const SUPABASE_URL = 'https://dbadiofmxikdmetszzrx.supabase.co';
-        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRiYWRpb2ZteGlrZG1ldHN6enJ4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTg1MzEyOTQsImV4cCI6MjA3NDEwNzI5NH0.ZtIREDS3kE6MWnfNnlq_h4Rw-kCsa8IJKzyNE57nprk';
-        const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-        
+        // Supabase client will be initialized after config is fetched
+        let supabase = null;
+        let supabaseConfigured = false;
+
+        // Fetch Supabase configuration from API
+        async function initSupabase() {
+            try {
+                const response = await fetch('/api/config');
+                const config = await response.json();
+
+                if (config.configured && config.supabaseUrl && config.supabaseAnonKey) {
+                    supabase = window.supabase.createClient(config.supabaseUrl, config.supabaseAnonKey);
+                    supabaseConfigured = true;
+                    console.log('Supabase initialized successfully');
+                } else {
+                    console.log('Supabase not configured - form will still work via email');
+                    supabaseConfigured = false;
+                }
+            } catch (error) {
+                console.error('Error fetching Supabase config:', error);
+                supabaseConfigured = false;
+            }
+        }
+
         function isSupabaseConfigured() {
-            return SUPABASE_URL.includes('supabase.co') && SUPABASE_ANON_KEY.length > 20;
+            return supabaseConfigured && supabase !== null;
         }
 
         // Language translations
@@ -989,9 +1009,12 @@
     <!-- JavaScript -->
     <script>
         // Initialize Lucide icons and language
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', async function() {
             lucide.createIcons();
-            
+
+            // Initialize Supabase configuration
+            await initSupabase();
+
             // Set initial language
             setLanguage(currentLang);
 
